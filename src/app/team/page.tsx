@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { TeamPhoto } from "@/components/team/TeamPhoto";
 import { site } from "@/data/site";
-import { currentStudents, principalInvestigator } from "@/data/team";
+import { currentStudents, pastStudents, principalInvestigator, type TeamMember } from "@/data/team";
 
 export const metadata: Metadata = {
   title: "Team",
@@ -15,6 +15,24 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
       <h2 className="text-lg font-semibold tracking-tight text-zinc-950">{children}</h2>
       <div className="mt-3 h-px w-full bg-zinc-200" />
     </div>
+  );
+}
+
+function MemberList({ members }: { members: TeamMember[] }) {
+  return (
+    <ul className="flex flex-col gap-6">
+      {members.map((member) => (
+        <li key={member.id}>
+          <article className="flex flex-col gap-6 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm sm:flex-row sm:items-start sm:gap-8">
+            <TeamPhoto name={member.name} alt={member.name} imageSrc={member.imageSrc} />
+            <div className="min-w-0 flex-1">
+              <h3 className="text-lg font-semibold text-zinc-950">{member.name}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">{member.bio}</p>
+            </div>
+          </article>
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -45,19 +63,21 @@ export default function TeamPage() {
 
       <section className="mt-20">
         <SectionTitle>Current Students</SectionTitle>
-        <ul className="flex flex-col gap-6">
-          {currentStudents.map((member) => (
-            <li key={member.id}>
-              <article className="flex flex-col gap-6 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm sm:flex-row sm:items-start sm:gap-8">
-                <TeamPhoto name={member.name} alt={member.name} imageSrc={member.imageSrc} />
-                <div className="min-w-0 flex-1">
-                  <h3 className="text-lg font-semibold text-zinc-950">{member.name}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-zinc-600">{member.bio}</p>
-                </div>
-              </article>
-            </li>
-          ))}
-        </ul>
+        {currentStudents.length > 0 ? (
+          <MemberList members={currentStudents} />
+        ) : (
+          <div className="rounded-lg border border-dashed border-zinc-300 bg-zinc-50 p-8 text-center">
+            <h3 className="text-lg font-semibold text-zinc-950">Coming soon</h3>
+            <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+              Current student profiles will be added here soon.
+            </p>
+          </div>
+        )}
+      </section>
+
+      <section className="mt-20">
+        <SectionTitle>Past Students</SectionTitle>
+        <MemberList members={pastStudents} />
       </section>
     </Container>
   );

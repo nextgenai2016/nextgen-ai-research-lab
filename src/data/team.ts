@@ -6,7 +6,7 @@ export type PrincipalInvestigator = {
   imageSrc?: string;
 };
 
-export type StudentMember = {
+export type TeamMember = {
   id: string;
   name: string;
   bio: string;
@@ -14,41 +14,95 @@ export type StudentMember = {
   imageSrc?: string;
 };
 
+export type StudentMember = TeamMember;
+
 export const principalInvestigator: PrincipalInvestigator = {
-  name: "Dr. Robin Chataut",
-  title: "Dr. Robin Chataut is an Assistant Professor of Computer Science at Texas Christian University and Director of the TCU NextGen AI Lab, specializing in artificial intelligence, machine learning, cybersecurity, and advanced wireless communication. He earned his Ph.D. from the University of North Texas and focuses his research on AI-driven cybersecurity, adversarial AI, large language models in education, and next-generation wireless systems such as 5G, B5G, and 6G. His work includes secure authentication, malware detection, and improving educational outcomes through AI-powered personalized learning. He has received funding from organizations like the NSF and NASA, actively mentors students, and contributes to the academic community as a Senior Member of IEEE and a reviewer for leading journals and conferences.",
+  name: "Robin Chataut",
+  title: "Assistant Professor of Cybersecurity and Computer Science",
   email: "robin.chataut@tcu.edu",
   imageSrc: "/team/robin-chataut.png",
 };
 
-export const currentStudents: StudentMember[] = [
-  {
-    id: "rahul-shrestha",
-    name: "Rahul Shrestha",
-    bio: "Pursuing a B.S. in Computer Science at TCU. Rahul's research focuses on adversarial attacks using LLMs and finding impact of AI on undergraduate education.",
-    imageSrc: "/team/rahul-shrestha.png",
-  },
+export const currentStudents: StudentMember[] = [];
+
+export const pastStudents: TeamMember[] = [
   {
     id: "gabby-campos",
     name: "Gabby Campos",
-    bio: "Pursuing a B.S. in Computer Science at TCU. Gabby is working on generating real world cyberattacks using LLMs and finding defense strategies.",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on generating real world cyberattacks using LLMs and finding defense strategies.",
     imageSrc: "/team/gabby-campos.png",
+  },
+  {
+    id: "griffin-kuchar",
+    name: "Griffin Kuchar",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on AI for healthcare in collaboration with the TCU Nursing Department and Children's Hospital.",
   },
   {
     id: "jayapradeep-srinivasan",
     name: "JayaPradeep Srinivasan",
-    bio: "Pursuing a B.S. in Computer Science at TCU. His research focus is developing AI-powered tutoring tools for students.",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on developing AI-powered tutoring tools for students.",
     imageSrc: "/team/jaypradeep.png",
   },
   {
     id: "riley-phan",
     name: "Riley Phan",
-    bio: "Pursuing a B.S. in Computer Science at TCU. Riley is working on finding vulnerabilities and bias in public and medical LLMs.",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on finding vulnerabilities and bias in public and medical LLMs.",
     imageSrc: "/team/riley-phan.png",
   },
   {
-    id: "tam-nguyen",
-    name: "Tam Nguyen",
-    bio: "Pursuing a B.S. in Computer Science at TCU. Tam's research interests include AI-based phishing detection. She is building a tool to automate phishing detection in browsers.",
+    id: "tam-nyugen",
+    name: "Tam Nyugen",
+    bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI-based phishing detection and tools to automate phishing detection in browsers.",
+  },
+  {
+    id: "rahul-shrestha",
+    name: "Rahul Shrestha",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on adversarial attacks using LLMs and the impact of AI on undergraduate education.",
+    imageSrc: "/team/rahul-shrestha.png",
+  },
+  {
+    id: "nagendra-chaudhary",
+    name: "Nagendra Chaudhary",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on AI-based intrusion detection tools.",
+  },
+  {
+    id: "madhavam-shahi",
+    name: "Madhavam Shahi",
+    bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI for healthcare and supporting children who have faced trauma.",
+  },
+  {
+    id: "yusuf-usman",
+    name: "Yusuf Usman",
+    bio: "M.S. in Cybersecurity, Quinnipiac University. Research on ML/AI techniques for phishing detection, attack and defense strategies, and malware detection.",
+  },
+  {
+    id: "mary-nankya",
+    name: "Mary Nankya",
+    bio: "M.S. in Computer Science, Fitchburg State University. Research on ML defense mechanisms, industrial control systems, and threat incidents.",
+  },
+  {
+    id: "aadesh-upadhyay",
+    name: "Aadesh Upadhyay",
+    bio: "M.S. in Computer Science, University of North Texas. Research on Cybersecurity and AI.",
+  },
+  {
+    id: "daniel-j-vitashkevich",
+    name: "Daniel J Vitashkevich",
+    bio: "B.S. in Computer Science, Quinnipiac University. Research in Next Generation Networks.",
+  },
+  {
+    id: "muriuki-mureithi-caleb",
+    name: "Muriuki-Mureithi Caleb",
+    bio: "B.S. in Computer Science, Quinnipiac University. Research in Next Generation Networks.",
+  },
+  {
+    id: "alex-phoummalayvane",
+    name: "Alex Phoummalayvane",
+    bio: "B.S. in Computer Science, Fitchburg State University. Research in IoT, Smart Cities, and Industry 4.0.",
+  },
+  {
+    id: "maxwell-zostant",
+    name: "Maxwell Zostant",
+    bio: "B.S. in Computer Information Systems, Fitchburg State University. Research in security, privacy, and ethics.",
   },
 ];

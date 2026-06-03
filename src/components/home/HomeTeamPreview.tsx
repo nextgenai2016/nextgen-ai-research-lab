@@ -34,31 +34,40 @@ export function HomeTeamPreview({ members }: HomeTeamPreviewProps) {
           </Link>
         </div>
 
-        <ul className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-          {preview.map((member, index) => (
-            <li key={member.id}>
-              <article
-                className={`home-motion-in flex h-full flex-col items-center rounded-2xl border border-zinc-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:border-zinc-300 hover:shadow-md min-[1920px]:p-8 ${
-                  index === 1
-                    ? "home-motion-delay-3"
-                    : index === 2
-                      ? "home-motion-delay-4"
-                      : ""
-                }`}
-              >
-                <div className="flex justify-center">
-                  <TeamPhoto name={member.name} alt={member.name} imageSrc={member.imageSrc} />
-                </div>
-                <h3 className="mt-6 text-lg font-semibold text-zinc-950 min-[1920px]:text-xl">
-                  {member.name}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-zinc-500 line-clamp-4 min-[1920px]:text-base">
-                  {member.bio}
-                </p>
-              </article>
-            </li>
-          ))}
-        </ul>
+        {preview.length > 0 ? (
+          <ul className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+            {preview.map((member, index) => (
+              <li key={member.id}>
+                <article
+                  className={`home-motion-in flex h-full flex-col items-center rounded-2xl border border-zinc-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:border-zinc-300 hover:shadow-md min-[1920px]:p-8 ${
+                    index === 1
+                      ? "home-motion-delay-3"
+                      : index === 2
+                        ? "home-motion-delay-4"
+                        : ""
+                  }`}
+                >
+                  <div className="flex justify-center">
+                    <TeamPhoto name={member.name} alt={member.name} imageSrc={member.imageSrc} />
+                  </div>
+                  <h3 className="mt-6 text-lg font-semibold text-zinc-950 min-[1920px]:text-xl">
+                    {member.name}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-zinc-500 line-clamp-4 min-[1920px]:text-base">
+                    {member.bio}
+                  </p>
+                </article>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className="home-motion-in home-motion-delay-3 mt-14 rounded-2xl border border-dashed border-zinc-300 bg-white p-8 text-center shadow-sm">
+            <h3 className="text-lg font-semibold text-zinc-950">Current students coming soon</h3>
+            <p className="mt-3 text-sm leading-relaxed text-zinc-500">
+              New student profiles will be added here soon.
+            </p>
+          </div>
+        )}
       </Container>
     </section>
   );

@@ -8,38 +8,28 @@ type TeamPhotoProps = {
 };
 
 const sizeClasses = {
-  md: "h-40 w-40 sm:h-44 sm:w-44",
-  lg: "h-48 w-48 sm:h-56 sm:w-56",
+  md: "w-40 sm:w-48",
+  lg: "w-48 sm:w-56",
 };
 
-export function TeamPhoto({ name, alt, imageSrc, size = "md" }: TeamPhotoProps) {
-  const initials = name
-    .split(/\s+/)
-    .map((w) => w[0])
-    .join("")
-    .slice(0, 3)
-    .toUpperCase();
+const fallbackImageSrc = "/team/horned-frog.png";
 
-  if (imageSrc) {
-    return (
-      <div className="relative w-40 sm:w-48 aspect-[3/4] shrink-0 overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100">
-  <Image
-    src={imageSrc}
-    alt={alt}
-    fill
-    className="object-cover object-center"
-    sizes="192px"
-  />
-</div>
-    );
-  }
+export function TeamPhoto({ alt, imageSrc, size = "md" }: TeamPhotoProps) {
+  const src = imageSrc ?? fallbackImageSrc;
+  const frameClass = imageSrc
+    ? "overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100"
+    : "";
+  const imageClass = imageSrc ? "object-cover object-center" : "object-contain object-center";
 
   return (
-    <div
-      className={`flex shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-100 font-mono text-xs font-medium tracking-tight text-zinc-500 ${sizeClasses[size]}`}
-      aria-hidden
-    >
-      {initials}
+    <div className={`relative aspect-[3/4] shrink-0 ${frameClass} ${sizeClasses[size]}`}>
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className={imageClass}
+        sizes={size === "lg" ? "224px" : "192px"}
+      />
     </div>
   );
 }
