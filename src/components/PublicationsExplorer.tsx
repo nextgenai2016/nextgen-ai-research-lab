@@ -149,7 +149,6 @@ function PublicationCard({ publication }: { publication: Publication }) {
 export function PublicationsExplorer({ publications }: PublicationsExplorerProps) {
   const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set());
   const [selectedYears, setSelectedYears] = useState<Set<string>>(new Set());
-  const [selectedAuthors, setSelectedAuthors] = useState<Set<string>>(new Set());
   const [searchTerm, setSearchTerm] = useState("");
 
   const typeCounts = useMemo(
@@ -160,11 +159,6 @@ export function PublicationsExplorer({ publications }: PublicationsExplorerProps
     () => countValues(publications, (publication) => [publication.year]),
     [publications],
   );
-  const authorCounts = useMemo(
-    () => countValues(publications, (publication) => publication.authors),
-    [publications],
-  );
-
   const typeOptions = useMemo(
     () =>
       publicationTypes.map((type) => ({
@@ -187,46 +181,29 @@ export function PublicationsExplorer({ publications }: PublicationsExplorerProps
     [yearCounts],
   );
 
-  const authorOptions = useMemo(
-    () =>
-      Array.from(authorCounts.entries())
-        .sort(([a], [b]) => a.localeCompare(b))
-        .map(([author, count]) => ({
-          label: author,
-          value: author,
-          count,
-        })),
-    [authorCounts],
-  );
-
   const filteredPublications = useMemo(() => {
     const normalizedSearch = searchTerm.trim().toLowerCase();
 
-    return publications.filter((publication) => {
-      const matchesType = selectedTypes.size === 0 || selectedTypes.has(publication.type);
-      const matchesYear =
-        selectedYears.size === 0 || selectedYears.has(String(publication.year));
-      const matchesAuthor =
-        selectedAuthors.size === 0 ||
-        publication.authors.some((author) => selectedAuthors.has(author));
-      const matchesSearch =
-        normalizedSearch.length === 0 ||
-        publication.title.toLowerCase().includes(normalizedSearch);
+    return publications
+      .filter((publication) => {
+        const matchesType = selectedTypes.size === 0 || selectedTypes.has(publication.type);
+        const matchesYear =
+          selectedYears.size === 0 || selectedYears.has(String(publication.year));
+        const matchesSearch =
+          normalizedSearch.length === 0 ||
+          publication.title.toLowerCase().includes(normalizedSearch);
 
-      return matchesType && matchesYear && matchesAuthor && matchesSearch;
-    });
-  }, [publications, searchTerm, selectedAuthors, selectedTypes, selectedYears]);
+        return matchesType && matchesYear && matchesSearch;
+      })
+      .sort((a, b) => b.year - a.year);
+  }, [publications, searchTerm, selectedTypes, selectedYears]);
 
   const hasActiveFilters =
-    selectedTypes.size > 0 ||
-    selectedYears.size > 0 ||
-    selectedAuthors.size > 0 ||
-    searchTerm.trim().length > 0;
+    selectedTypes.size > 0 || selectedYears.size > 0 || searchTerm.trim().length > 0;
 
   function clearFilters() {
     setSelectedTypes(new Set());
     setSelectedYears(new Set());
-    setSelectedAuthors(new Set());
     setSearchTerm("");
   }
 
@@ -278,12 +255,6 @@ export function PublicationsExplorer({ publications }: PublicationsExplorerProps
           options={yearOptions}
           selected={selectedYears}
           onToggle={(value) => setSelectedYears((current) => toggleSetValue(current, value))}
-        />
-        <FilterGroup
-          title="Author Name"
-          options={authorOptions}
-          selected={selectedAuthors}
-          onToggle={(value) => setSelectedAuthors((current) => toggleSetValue(current, value))}
         />
       </div>
     </aside>
