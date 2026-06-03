@@ -28,7 +28,7 @@ function NavLinks({
     <ul
       className={
         variant === "inline"
-          ? "flex items-center gap-7 min-[1920px]:gap-9"
+          ? "flex items-center gap-8 min-[1920px]:gap-10"
           : "flex flex-col gap-0.5"
       }
     >
@@ -36,11 +36,11 @@ function NavLinks({
         const active = isActivePath(pathname, item.href);
         const base =
           variant === "inline"
-            ? "text-sm font-medium transition-colors"
-            : "block rounded-lg px-4 py-3.5 text-base font-medium transition-colors";
+            ? "font-mono text-[0.65rem] font-semibold uppercase tracking-[0.2em] transition-colors"
+            : "block rounded-lg px-4 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] transition-colors";
         const state = active
-          ? "text-zinc-950"
-          : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-950";
+          ? "text-sky-800"
+          : "text-zinc-700 hover:bg-zinc-100 hover:text-sky-800";
         return (
           <li key={item.href}>
             <Link href={item.href} onClick={onNavigate} className={`${base} ${state}`}>
@@ -70,52 +70,45 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 pt-4 pb-3 backdrop-blur sm:pt-5 sm:pb-4">
+    <header className="sticky top-0 z-50 border-b border-zinc-100 bg-white/90 backdrop-blur">
       <div className={layoutShell}>
-        <div className="flex justify-center">
-          <div
-            className={`flex w-full max-w-5xl items-center gap-3 rounded-full border border-zinc-200 bg-white/95 py-2.5 pl-3 pr-2 shadow-sm backdrop-blur-xl sm:gap-4 sm:py-3 sm:pl-5 sm:pr-3 min-[1920px]:max-w-6xl`}
+        <div className="flex h-16 items-center justify-between gap-6 min-[1920px]:h-20">
+          <Link
+            href="/"
+            aria-label={`${site.name} — home`}
+            className="min-w-0 shrink-0 truncate font-serif text-base font-semibold tracking-tight text-sky-900 transition-opacity hover:opacity-75 min-[1920px]:text-lg"
           >
-            <Link
-              href="/"
-              aria-label={`${site.name} — home`}
-              className="min-w-0 shrink-0 truncate rounded-full py-0.5 pr-1 font-medium tracking-tight text-zinc-950 text-sm transition-opacity hover:opacity-80 sm:text-base min-[1920px]:text-lg"
-            >
-              {brandShort}
-            </Link>
+            {brandShort}
+          </Link>
 
-            <nav
-              className="ml-auto hidden flex-1 items-center justify-end lg:flex"
-              aria-label="Main"
-            >
-              <NavLinks pathname={pathname} variant="inline" />
-            </nav>
+          <nav className="hidden items-center justify-end lg:flex" aria-label="Main">
+            <NavLinks pathname={pathname} variant="inline" />
+          </nav>
 
-            <button
-              type="button"
-              className="inline-flex shrink-0 items-center justify-center rounded-full border border-zinc-200 bg-zinc-50 p-2.5 text-zinc-700 transition hover:bg-zinc-100 lg:hidden"
-              aria-expanded={open}
-              aria-controls="mobile-nav"
-              aria-label={open ? "Close menu" : "Open menu"}
-              onClick={() => setOpen((v) => !v)}
+          <button
+            type="button"
+            className="inline-flex shrink-0 items-center justify-center rounded-full border border-zinc-200 bg-zinc-50 p-2.5 text-zinc-700 transition hover:bg-zinc-100 lg:hidden"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="sr-only">{open ? "Close" : "Menu"}</span>
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={1.75}
+              aria-hidden
             >
-              <span className="sr-only">{open ? "Close" : "Menu"}</span>
-              <svg
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={1.75}
-                aria-hidden
-              >
-                {open ? (
-                  <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
+              {open ? (
+                <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
       </div>
 
