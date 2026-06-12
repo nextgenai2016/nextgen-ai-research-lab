@@ -3,6 +3,8 @@ import { Container } from "@/components/layout/Container";
 import { TeamPhoto } from "@/components/team/TeamPhoto";
 import { site } from "@/data/site";
 import { currentStudents, pastStudents, principalInvestigator, type TeamMember } from "@/data/team";
+import { FaFilePdf, FaGlobe, FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGooglescholar } from "react-icons/si";
 
 export const metadata: Metadata = {
   title: "Team",
@@ -49,14 +51,89 @@ export default function TeamPage() {
             size="lg"
           />
           <div className="min-w-0 flex-1">
-            <h3 className="text-lg font-semibold text-zinc-950">{principalInvestigator.name}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-zinc-600">{principalInvestigator.title}</p>
+            <h3 className="text-2xl font-semibold text-zinc-950">
+              {principalInvestigator.name}
+            </h3>
+
+            <p className="mt-2 text-sm font-medium leading-relaxed text-zinc-700">
+              {principalInvestigator.title}
+            </p>
+
+            <p className="mt-1 text-sm text-zinc-600">
+              {principalInvestigator.department}
+            </p>
+
+            <p className="text-sm text-zinc-600">
+              {principalInvestigator.affiliation}
+            </p>
+
             <a
               href={`mailto:${principalInvestigator.email}`}
               className="mt-3 inline-block text-sm text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
             >
               {principalInvestigator.email}
             </a>
+
+            <p className="mt-4 text-sm leading-7 text-zinc-600">
+              {principalInvestigator.bio}
+            </p>
+
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <a
+                href="/contents/CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CV"
+                title="Curriculum Vitae"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
+              >
+                <FaFilePdf />
+              </a>
+
+              <a
+                href={principalInvestigator.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Website"
+                title="Personal Website"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
+              >
+                <FaGlobe />
+              </a>
+
+              <a
+                href={principalInvestigator.googleScholar}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google Scholar"
+                title="Google Scholar"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
+              >
+                <SiGooglescholar />
+              </a>
+
+              <a
+                href={principalInvestigator.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                title="GitHub"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
+              >
+                <FaGithub />
+              </a>
+
+              <a
+                href={principalInvestigator.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </article>
       </section>
