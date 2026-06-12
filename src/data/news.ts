@@ -8,12 +8,20 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+  id: "news-001",
+  date: "June 2026",
+  year: 2026,
+  category: "Publication",
+  title:
+    "Paper accepted at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026): 'Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries",
+},
+  {
     id: "news-001",
-    date: "April 2026",
+    date: "May 2026",
     year: 2026,
     category: "Publication",
     title:
-      "Paper accepted at ACM IUI 2026 (TRUST-CUAI Workshop), Paphos, Cyprus: “Designing Trustworthy Agentic RAG Systems through Modality-Separated Interaction and Error-Aware Memory”",
+      "Paper accepted at ACM IUI 2026 TRUST-CUA Workshop (ACM IUI), Paphos, Cyprus: “Designing Trustworthy Agentic RAG Systems through Modality-Separated Interaction and Error-Aware Memory”",
   },
   {
     id: "news-002",
