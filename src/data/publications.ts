@@ -25,6 +25,7 @@ export const publications: Publication[] = [
   title:
     "Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries",
   type: "Conference",
+  venue: "DBSec 2026",
   year: 2026,
   authors: [
     "G. Campos",
