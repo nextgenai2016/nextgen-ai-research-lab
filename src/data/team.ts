@@ -18,9 +18,18 @@ export type StudentMember = TeamMember;
 
 export const principalInvestigator: PrincipalInvestigator = {
   name: "Robin Chataut",
-  title: "Assistant Professor of Cybersecurity and Computer Science",
+  title: "Assistant Professor and Director of Graduate Studies",
+  affiliation: "Texas Christian University",
+  department: "Department of Computer Science",
   email: "robin.chataut@tcu.edu",
   imageSrc: "/team/robin-chataut.png",
+
+  website: "https://robinchataut.com",
+  googleScholar: "https://scholar.google.com/citations?user=0ixaP0AAAAAJ",
+  github: "https://github.com/robinchataut",
+  linkedin: "https://www.linkedin.com/in/robinchataut/",
+
+  bio: `Dr. Robin Chataut is an Assistant Professor and Director of Graduate Studies in the Department of Computer Science at Texas Christian University (TCU), where he leads the NextGen AI Research Lab. His research focuses on Artificial Intelligence, Cybersecurity, Large Language Models (LLMs), Trustworthy AI, AI for Healthcare, and Next-Generation Wireless Networks (5G/6G). His work has been published in leading venues including IEEE Access, Sensors, ACM conferences, AAAI workshops, and IFIP DBSec. He is a Senior Member of IEEE and actively collaborates with students and researchers on advancing secure, trustworthy, and human-centered AI systems.`,
 };
 
 export const currentStudents: StudentMember[] = [];
