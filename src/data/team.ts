@@ -1,9 +1,15 @@
 export type PrincipalInvestigator = {
   name: string;
   title: string;
+  affiliation: string;
+  department: string;
   email: string;
-  /** Optional path under /public, e.g. /team/robin-chataut.jpg */
-  imageSrc?: string;
+  imageSrc: string;
+  website: string;
+  googleScholar: string;
+  github: string;
+  linkedin: string;
+  bio: string;
 };
 
 export type TeamMember = {
