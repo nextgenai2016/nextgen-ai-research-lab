@@ -115,6 +115,11 @@ function PublicationCard({ publication }: { publication: Publication }) {
         </div>
 
         <div className="min-w-0">
+            {publication.venue && (
+            <div className="mb-1.5 text-lg font-extrabold tracking-tight text-violet-700">
+              {publication.venue}
+            </div>
+            )}
           <h2 className="text-[0.95rem] font-medium leading-snug tracking-tight text-zinc-950 min-[1920px]:text-base">
             {publication.title}
           </h2>
