@@ -34,8 +34,8 @@ export const publications: Publication[] = [
     "P. K. Gyawali",
     "R. Chataut",
   ],
-  summary:
-    "Analyzes the execution boundaries of LLM-assisted cyberattacks through a stage-level workflow framework. Accepted at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026).",
+ summary:
+    "In Proceedings of the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026).",
   links: {
     paper: "https://dbsec2026.gmu.edu/program-accepted-papers/",
   },
