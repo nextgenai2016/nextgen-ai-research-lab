@@ -21,6 +21,25 @@ export const publicationTypes: PublicationType[] = ["Book", "Chapter", "Conferen
 
 export const publications: Publication[] = [
   {
+  id: "llm-assisted-cyberattacks-break-down-dbsec-2026",
+  title:
+    "Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries",
+  type: "Conference",
+  year: 2026,
+  authors: [
+    "G. Campos",
+    "T. Nguyen",
+    "C. Pandey",
+    "P. K. Gyawali",
+    "R. Chataut",
+  ],
+  summary:
+    "Analyzes the execution boundaries of LLM-assisted cyberattacks through a stage-level workflow framework. Accepted at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026).",
+  links: {
+    paper: "https://dbsec2026.gmu.edu/program-accepted-papers/",
+  },
+},
+  {
     id: "modular-llm-framework-education-2026",
     title:
       "Modular LLM Framework for Personalized Educational Content Generation with Retrieval-Augmented Grounding and Multimodal Outputs",
