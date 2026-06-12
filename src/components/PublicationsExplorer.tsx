@@ -19,7 +19,7 @@ type PublicationLinkKey = keyof NonNullable<Publication["links"]>;
 
 const linkLabels: Record<PublicationLinkKey, string> = {
   paper: "Paper",
-  doi: "DOI",
+  doi: "Paper",
   citation: "Citation",
   code: "Code",
   demo: "Demo",
