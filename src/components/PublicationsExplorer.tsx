@@ -127,7 +127,12 @@ function PublicationCard({ publication }: { publication: Publication }) {
             {publication.summary}
           </p>
           <p className="mt-1.5 text-xs leading-5 text-zinc-500">
-            <span className="text-zinc-800">Authors:</span> {publication.authors.join(", ")}
+            <span className="text-zinc-800">Authors:</span> {publication.authors.map((author, index) => (
+  <span key={author}>
+    {author === "R. Chataut" ? <strong>{author}</strong> : author}
+    {index < publication.authors.length - 1 ? ", " : ""}
+  </span>
+))}
           </p>
 
           {links.length > 0 ? (
