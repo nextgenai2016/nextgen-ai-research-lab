@@ -72,7 +72,7 @@ export const publications: Publication[] = [
     authors: ["R. Misra", "R. Dahal", "B. Kirk", "R. Khan", "G. Dogan", "R. Chataut", "P. Gyawali"],
     summary: "International Journal of Qualitative Methods, Vol. 25, 2026.",
     links: {
-      Paper: "https://Paper.org/10.1177/16094069261426100",
+      doi: "https://doi.org/10.1177/16094069261426100",
     },
   },
   {
@@ -85,7 +85,7 @@ export const publications: Publication[] = [
     authors: ["Y. Usman", "H. Oladipupo", "A. D. During", "R. Akl", "R. Chataut"],
     summary: "IEEE Access, 2025.",
     links: {
-      Paper: "https://Paper.org/10.1109/ACCESS.2025.3608736",
+      doi: "https://doi.org/10.1109/ACCESS.2025.3608736",
     },
   },
   {
@@ -98,7 +98,7 @@ export const publications: Publication[] = [
     authors: ["Y. Usman", "C. J. Ihejirika", "S. N. Offor", "R. Akl", "R. Chataut"],
     summary: "IEEE Access, 2025.",
     links: {
-      Paper: "https://Paper.org/10.1109/ACCESS.2025.3602451",
+      doi: "https://doi.org/10.1109/ACCESS.2025.3602451",
     },
   },
   {
@@ -112,7 +112,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the Thirty-Seventh International Conference on Software Engineering and Knowledge Engineering (SEKE 2025).",
     links: {
-      Paper: "https://Paper.org/10.18293/seke2025-107",
+      doi: "https://doi.org/10.18293/seke2025-107",
     },
   },
   {
@@ -124,7 +124,7 @@ export const publications: Publication[] = [
     authors: ["R. Dahal", "G. Murray", "R. Chataut", "M. Hefeida", "A. K. Srivastava", "P. K. Gyawali"],
     summary: "IEEE Access, 2025.",
     links: {
-      Paper: "https://Paper.org/10.1109/ACCESS.2025.3576329",
+      doi: "https://doi.org/10.1109/ACCESS.2025.3576329",
     },
   },
   {
@@ -137,7 +137,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE World AI IoT Congress (AIIoT 2025), 2025.",
     links: {
-      Paper: "https://Paper.org/10.1109/AIIoT65859.2025.11105337",
+      doi: "https://doi.org/10.1109/AIIoT65859.2025.11105337",
     },
   },
   {
@@ -150,7 +150,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE World AI IoT Congress (AIIoT 2025), 2025.",
     links: {
-      Paper: "https://Paper.org/10.1109/AIIoT65859.2025.11105302",
+      doi: "https://doi.org/10.1109/AIIoT65859.2025.11105302",
     },
   },
   {
@@ -163,7 +163,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE World AI IoT Congress (AIIoT 2025), 2025.",
     links: {
-      Paper: "https://Paper.org/10.1109/AIIoT65859.2025.11105312",
+      doi: "https://doi.org/10.1109/AIIoT65859.2025.11105312",
     },
   },
   {
@@ -177,7 +177,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE Conference on Cyber Security in Networking (CSNet 2024), Paris, France, 2024.",
     links: {
-      Paper: "https://Paper.org/10.1109/CSNet64211.2024.10851763",
+      doi: "https://doi.org/10.1109/CSNet64211.2024.10851763",
     },
   },
   {
@@ -189,7 +189,7 @@ export const publications: Publication[] = [
     authors: ["M. Nankya", "A. Mugisa", "Y. Usman", "A. Upadhyay", "R. Chataut"],
     summary: "IEEE Access, 2024.",
     links: {
-      Paper: "https://Paper.org/10.1109/ACCESS.2024.3469215",
+      doi: "https://doi.org/10.1109/ACCESS.2024.3469215",
     },
   },
   {
@@ -203,7 +203,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE UEMCON 2024, IBM Research Center, New York, NY, USA, 2024.",
     links: {
-      Paper: "https://Paper.org/10.1109/UEMCON62879.2024.10754710",
+      doi: "https://doi.org/10.1109/UEMCON62879.2024.10754710",
     },
   },
   {
@@ -216,7 +216,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE UEMCON 2024, IBM Research Center, New York, NY, USA, 2024.",
     links: {
-      Paper: "https://Paper.org/10.1109/UEMCON62879.2024.10754676",
+      doi: "https://doi.org/10.1109/UEMCON62879.2024.10754676",
     },
   },
   {
@@ -229,7 +229,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the 2024 ASEE Northeast Section Conference, Fairfield, CT, USA, 2024.",
     links: {
-      Paper: "https://Paper.org/10.18260/1-2--45786",
+      doi: "https://doi.org/10.18260/1-2--45786",
     },
   },
   {
@@ -241,7 +241,7 @@ export const publications: Publication[] = [
     authors: ["R. Chataut", "R. Akl"],
     summary: "ICACT Transactions on Advanced Communications Technology, 2024.",
     links: {
-      Paper: "https://Paper.org/10.23919/ICACT60172.2024.10471912",
+      doi: "https://doi.org/10.23919/ICACT60172.2024.10471912",
     },
   },
   {
@@ -254,7 +254,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2024), Las Vegas, NV, USA, 2024.",
     links: {
-      Paper: "https://Paper.org/10.1109/CCWC60891.2024.10427626",
+      doi: "https://doi.org/10.1109/CCWC60891.2024.10427626",
     },
   },
   {
@@ -267,7 +267,7 @@ export const publications: Publication[] = [
     authors: ["R. Chataut", "M. Nankya", "R. Akl"],
     summary: "Sensors, Vol. 24, No. 6, 2024.",
     links: {
-      Paper: "https://Paper.org/10.3390/s24061888",
+      doi: "https://doi.org/10.3390/s24061888",
     },
   },
   {
@@ -280,7 +280,7 @@ export const publications: Publication[] = [
     authors: ["M. Nankya", "R. Chataut", "R. Akl"],
     summary: "Sensors, Vol. 23, No. 21, 2023.",
     links: {
-      Paper: "https://Paper.org/10.3390/s23218840",
+      doi: "https://doi.org/10.3390/s23218840",
     },
   },
   {
@@ -292,7 +292,7 @@ export const publications: Publication[] = [
     authors: ["M. Zostant", "R. Chataut"],
     summary: "Computer Science and Information Technologies, Vol. 4, No. 2, 2023.",
     links: {
-      Paper: "https://Paper.org/10.11591/csit.v4i2.pp183-190",
+      doi: "https://doi.org/10.11591/csit.v4i2.pp183-190",
     },
   },
   {
@@ -305,7 +305,7 @@ export const publications: Publication[] = [
     authors: ["R. Chataut", "A. Phoummalayvane", "R. Akl"],
     summary: "Sensors, Vol. 23, No. 16, 2023.",
     links: {
-      Paper: "https://Paper.org/10.3390/s23167194",
+      doi: "https://doi.org/10.3390/s23167194",
     },
   },
   {
@@ -318,7 +318,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the International Conference on Advanced Communications Technology (ICACT 2023), Pyeongchang, South Korea, 2023.",
     links: {
-      Paper: "https://Paper.org/10.23919/ICACT56868.2023.10079558",
+      doi: "https://doi.org/10.23919/ICACT56868.2023.10079558",
     },
   },
   {
@@ -331,7 +331,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE HONET 2022, 2022.",
     links: {
-      Paper: "https://Paper.org/10.1109/HONET56683.2022.10019065",
+      doi: "https://doi.org/10.1109/HONET56683.2022.10019065",
     },
   },
   {
@@ -344,7 +344,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE WMCS 2022, 2022.",
     links: {
-      Paper: "https://Paper.org/10.1109/WMCS55582.2022.9866166",
+      doi: "https://doi.org/10.1109/WMCS55582.2022.9866166",
     },
   },
   {
@@ -358,7 +358,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2022), Las Vegas, NV, USA, 2022.",
     links: {
-      Paper: "https://Paper.org/10.1109/CCWC54503.2022.9720849",
+      doi: "https://doi.org/10.1109/CCWC54503.2022.9720849",
     },
   },
   {
@@ -372,7 +372,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE UEMCON 2022, 2022.",
     links: {
-      Paper: "https://Paper.org/10.1109/UEMCON54665.2022.9965719",
+      doi: "https://doi.org/10.1109/UEMCON54665.2022.9965719",
     },
   },
   {
@@ -385,7 +385,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the International Conference on Advanced Communications Technology (ICACT 2022), Pyeongchang, South Korea, 2022.",
     links: {
-      Paper: "https://Paper.org/10.23919/ICACT53585.2022.9728837",
+      doi: "https://doi.org/10.23919/ICACT53585.2022.9728837",
     },
   },
   {
@@ -398,7 +398,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE UEMCON 2021, 2021.",
     links: {
-      Paper: "https://Paper.org/10.1109/UEMCON53757.2021.9666709",
+      doi: "https://doi.org/10.1109/UEMCON53757.2021.9666709",
     },
   },
   {
@@ -411,7 +411,7 @@ export const publications: Publication[] = [
     authors: ["R. Chataut", "R. Akl", "U. K. Dey", "M. Robaei"],
     summary: "Electronics, Vol. 10, No. 5, 2021.",
     links: {
-      Paper: "https://Paper.org/10.3390/electronics10050578",
+      doi: "https://doi.org/10.3390/electronics10050578",
     },
   },
   {
@@ -425,7 +425,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE UEMCON 2021, 2021.",
     links: {
-      Paper: "https://Paper.org/10.1109/UEMCON53757.2021.9666574",
+      doi: "https://doi.org/10.1109/UEMCON53757.2021.9666574",
     },
   },
   {
@@ -438,7 +438,7 @@ export const publications: Publication[] = [
     authors: ["R. Chataut", "R. Akl"],
     summary: "Sensors, Vol. 20, No. 10, 2020.",
     links: {
-      Paper: "https://Paper.org/10.3390/s20102753",
+      doi: "https://doi.org/10.3390/s20102753",
     },
   },
   {
@@ -461,7 +461,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE DCOSS 2020, 2020.",
     links: {
-      Paper: "https://Paper.org/10.1109/DCOSS49796.2020.00076",
+      doi: "https://doi.org/10.1109/DCOSS49796.2020.00076",
     },
   },
   {
@@ -474,7 +474,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE WMCS 2020, 2020.",
     links: {
-      Paper: "https://Paper.org/10.1109/WMCS49442.2020.9172382",
+      doi: "https://doi.org/10.1109/WMCS49442.2020.9172382",
     },
   },
   {
@@ -488,7 +488,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2020), Las Vegas, NV, USA, 2020.",
     links: {
-      Paper: "https://Paper.org/10.1109/CCWC47524.2020.9031209",
+      doi: "https://doi.org/10.1109/CCWC47524.2020.9031209",
     },
   },
   {
@@ -501,7 +501,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2020), Las Vegas, NV, USA, 2020.",
     links: {
-      Paper: "https://Paper.org/10.1109/CCWC47524.2020.9031225",
+      doi: "https://doi.org/10.1109/CCWC47524.2020.9031225",
     },
   },
   {
@@ -514,7 +514,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE UEMCON 2020, 2020.",
     links: {
-      Paper: "https://Paper.org/10.1109/UEMCON51285.2020.9298144",
+      doi: "https://doi.org/10.1109/UEMCON51285.2020.9298144",
     },
   },
   {
@@ -527,7 +527,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE HONET 2019, 2019.",
     links: {
-      Paper: "https://Paper.org/10.1109/HONET.2019.8908036",
+      doi: "https://doi.org/10.1109/HONET.2019.8908036",
     },
   },
   {
@@ -540,7 +540,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE WAMICON 2019, 2019.",
     links: {
-      Paper: "https://Paper.org/10.1109/WAMICON.2019.8765469",
+      doi: "https://doi.org/10.1109/WAMICON.2019.8765469",
     },
   },
   {
@@ -553,7 +553,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE UEMCON 2018, 2018.",
     links: {
-      Paper: "https://Paper.org/10.1109/UEMCON.2018.8796735",
+      doi: "https://doi.org/10.1109/UEMCON.2018.8796735",
     },
   },
   {
@@ -566,7 +566,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of IEEE WAMICON 2018, 2018.",
     links: {
-      Paper: "https://Paper.org/10.1109/WAMICON.2018.8363885",
+      doi: "https://doi.org/10.1109/WAMICON.2018.8363885",
     },
   },
   {
@@ -579,7 +579,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2018), Las Vegas, NV, USA, 2018.",
     links: {
-      Paper: "https://Paper.org/10.1109/CCWC.2018.8301625",
+      doi: "https://doi.org/10.1109/CCWC.2018.8301625",
     },
   },
   {
@@ -592,7 +592,7 @@ export const publications: Publication[] = [
     summary:
       "In Deepfakes and Their Impact on Business, IGI Global, 2025.",
     links: {
-      Paper: "https://Paper.org/10.4018/979-8-3693-6890-9.ch001",
+      doi: "https://doi.org/10.4018/979-8-3693-6890-9.ch001",
     },
   },
 ];
