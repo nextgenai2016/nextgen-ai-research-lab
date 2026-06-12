@@ -4,6 +4,7 @@ export type Publication = {
   id: string;
   title: string;
   type: PublicationType;
+  venue?: string;      // NEW
   year: number;
   authors: string[];
   summary: string;
@@ -24,10 +25,11 @@ export const publications: Publication[] = [
     title:
       "Modular LLM Framework for Personalized Educational Content Generation with Retrieval-Augmented Grounding and Multimodal Outputs",
     type: "Conference",
+    venue: "AAAI 2026 (AI4EDU)",
     year: 2026,
     authors: ["Jayaraman Srinivas", "R. Phan", "G. Campos", "N. Chaudhary", "R. Chataut"],
     summary:
-      "Presents a modular LLM framework for personalized educational content generation using retrieval-augmented grounding and multimodal outputs. In Proceedings of the AAAI-26 Artificial Intelligence for Education Workshop (AI4EDU), Springer LNCS. In press.",
+      "Presents a modular LLM framework for personalized educational content generation using retrieval-augmented grounding and multimodal outputs. In Proceedings of the AAAI-26 Artificial Intelligence for Education Workshop (AI4EDU Workshop), Springer LNCS. In press.",
     links: {
       paper: "https://drive.google.com/file/d/1sn2bh6HENmMpAu5jil3adevT7VoPDYym/view",
     },
