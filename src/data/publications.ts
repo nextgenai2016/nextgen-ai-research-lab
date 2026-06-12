@@ -55,23 +55,11 @@ export const publications: Publication[] = [
     },
   },
   {
-    id: "large-language-models-qualitative-analysis-2026",
-    title:
-      "Large Language Models in Qualitative Analysis: Comparing Traditional and Researcher-Interpreted Approaches",
-    type: "Journal",
-    year: 2026,
-    authors: ["R. Misra", "R. Dahal", "B. Kirk", "R. Khan", "G. Dogan", "R. Chataut", "P. Gyawali"],
-    summary:
-      "Compares traditional and researcher-interpreted uses of large language models for qualitative analysis in International Journal of Qualitative Methods.",
-    links: {
-      doi: "https://doi.org/10.1177/16094069261426100",
-    },
-  },
-  {
     id: "trustworthy-agentic-rag-systems-2026",
     title:
       "Designing Trustworthy Agentic RAG Systems through Modality-Separated Interaction and Error-Aware Memory",
     type: "Conference",
+    venue: "ACM IUI (TRUST CUA)",
     year: 2026,
     authors: ["A. Sirandass", "J. Rangu", "Y. Usman", "R. Chataut"],
     summary:
@@ -80,6 +68,21 @@ export const publications: Publication[] = [
       paper: "https://sites.google.com/view/trust-cuaiui26/home%20",
     },
   },
+  {
+    id: "large-language-models-qualitative-analysis-2026",
+    title:
+      "Large Language Models in Qualitative Analysis: Comparing Traditional and Researcher-Interpreted Approaches",
+    type: "Journal",
+     venue: "IJQM Journal",
+    year: 2026,
+    authors: ["R. Misra", "R. Dahal", "B. Kirk", "R. Khan", "G. Dogan", "R. Chataut", "P. Gyawali"],
+    summary:
+      "Compares traditional and researcher-interpreted uses of large language models for qualitative analysis in International Journal of Qualitative Methods.",
+    links: {
+      doi: "https://doi.org/10.1177/16094069261426100",
+    },
+  },
+  
   {
     id: "ai-ml-llm-5g-6g-survey-2025",
     title:
