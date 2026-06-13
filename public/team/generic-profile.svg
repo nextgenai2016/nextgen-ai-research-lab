@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-labelledby="title desc">
+  <title id="title">Generic profile silhouette</title>
+  <desc id="desc">A neutral profile avatar for team members without a photo.</desc>
+  <rect width="300" height="400" fill="#f4f4f5"/>
+  <circle cx="150" cy="132" r="58" fill="#d4d4d8"/>
+  <path d="M52 334c13-67 51-103 98-103s85 36 98 103" fill="#d4d4d8"/>
+  <path d="M82 334c12-45 38-69 68-69s56 24 68 69" fill="#a1a1aa"/>
+</svg>

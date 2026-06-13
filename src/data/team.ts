@@ -86,35 +86,42 @@ export const pastStudents: TeamMember[] = [
     id: "yusuf-usman",
     name: "Yusuf Usman",
     bio: "M.S. in Cybersecurity, Quinnipiac University. Research on ML/AI techniques for phishing detection, attack and defense strategies, and malware detection.",
+    imageSrc: "/team/generic-profile.svg",
   },
   {
     id: "mary-nankya",
     name: "Mary Nankya",
     bio: "M.S. in Computer Science, Fitchburg State University. Research on ML defense mechanisms, industrial control systems, and threat incidents.",
+    imageSrc: "/team/generic-profile.svg",
   },
   {
     id: "aadesh-upadhyay",
     name: "Aadesh Upadhyay",
     bio: "M.S. in Computer Science, University of North Texas. Research on Cybersecurity and AI.",
+    imageSrc: "/team/generic-profile.svg",
   },
   {
     id: "daniel-j-vitashkevich",
     name: "Daniel J Vitashkevich",
     bio: "B.S. in Computer Science, Quinnipiac University. Research in Next Generation Networks.",
+    imageSrc: "/team/generic-profile.svg",
   },
   {
     id: "muriuki-mureithi-caleb",
     name: "Muriuki-Mureithi Caleb",
     bio: "B.S. in Computer Science, Quinnipiac University. Research in Next Generation Networks.",
+    imageSrc: "/team/generic-profile.svg",
   },
   {
     id: "alex-phoummalayvane",
     name: "Alex Phoummalayvane",
     bio: "B.S. in Computer Science, Fitchburg State University. Research in IoT, Smart Cities, and Industry 4.0.",
+    imageSrc: "/team/generic-profile.svg",
   },
   {
     id: "maxwell-zostant",
     name: "Maxwell Zostant",
     bio: "B.S. in Computer Information Systems, Fitchburg State University. Research in security, privacy, and ethics.",
+    imageSrc: "/team/generic-profile.svg",
   },
 ];
