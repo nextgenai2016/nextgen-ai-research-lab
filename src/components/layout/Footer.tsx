@@ -2,7 +2,7 @@ import { layoutShell } from "@/components/layout/shell";
 import { contact } from "@/data/contact";
 import { site } from "@/data/site";
 
-const footerEmails = ["robin.chataut@tcu.edu", "ailabs@tcu.edu"] as const;
+const footerEmails = ["ailabs@tcu.edu"] as const;
 
 const emailLinkClass =
   "block text-sm text-zinc-700 underline decoration-zinc-300 underline-offset-4 transition hover:text-sky-700 hover:decoration-sky-300 2xl:text-[0.9375rem] min-[1920px]:text-base";

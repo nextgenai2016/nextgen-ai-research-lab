@@ -9,5 +9,6 @@ export const mainNav: NavItem[] = [
   { href: "/news", label: "News" },
   { href: "/research", label: "Research" },
   { href: "/publications", label: "Publications" },
+  { href: "/open-positions", label: "Open Positions" },
   { href: "/contacts", label: "Contacts" },
 ];
