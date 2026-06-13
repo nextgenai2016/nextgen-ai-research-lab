@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { TeamPhoto } from "@/components/team/TeamPhoto";
 import { contact } from "@/data/contact";
 import { newsItems, type NewsItem } from "@/data/news";
+import { principalInvestigator } from "@/data/team";
 
 const latestNews = newsItems.slice(0, 4);
 
@@ -57,6 +59,101 @@ function NewsPreview({ item }: { item: NewsItem }) {
   );
 }
 
+function PrincipalInvestigatorPreview() {
+  return (
+    <section className="mt-14 border-t border-zinc-200 pt-10">
+      <p className="font-mono text-[0.63rem] font-semibold uppercase tracking-[0.28em] text-sky-800">
+        Principal Investigator
+      </p>
+
+      <div className="mt-5 flex flex-col gap-6 sm:flex-row sm:items-start">
+        <TeamPhoto
+          name={principalInvestigator.name}
+          alt={principalInvestigator.name}
+          imageSrc={principalInvestigator.imageSrc}
+          size="lg"
+        />
+
+        <div className="min-w-0 flex-1">
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
+            {principalInvestigator.name}
+          </h2>
+
+          <p className="mt-2 text-sm font-medium leading-relaxed text-zinc-700">
+            {principalInvestigator.title}
+          </p>
+
+          <p className="mt-1 text-sm text-zinc-600">
+            {principalInvestigator.department}
+          </p>
+
+          <p className="text-sm text-zinc-600">
+            {principalInvestigator.affiliation}
+          </p>
+
+          <a
+            href={`mailto:${principalInvestigator.email}`}
+            className="mt-3 inline-block text-sm text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
+          >
+            {principalInvestigator.email}
+          </a>
+
+          <p className="mt-4 text-sm leading-7 text-zinc-700">
+            {principalInvestigator.bio}
+          </p>
+
+          <div className="mt-5 flex flex-wrap items-center gap-2">
+            <a
+              href="/contents/CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
+            >
+              CV
+            </a>
+
+            <a
+              href={principalInvestigator.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
+            >
+              Website
+            </a>
+
+            <a
+              href={principalInvestigator.googleScholar}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
+            >
+              Scholar
+            </a>
+
+            <a
+              href={principalInvestigator.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
+            >
+              GitHub
+            </a>
+
+            <a
+              href={principalInvestigator.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function HomePage() {
   return (
     <Container className="pb-20 pt-16 sm:pb-24 sm:pt-24 lg:pt-28 min-[1920px]:pb-28 min-[1920px]:pt-32">
@@ -90,6 +187,8 @@ export default function HomePage() {
               </section>
             ))}
           </div>
+
+          <PrincipalInvestigatorPreview />
 
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
