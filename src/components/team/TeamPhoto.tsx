@@ -12,7 +12,7 @@ const sizeClasses = {
   lg: "w-48 sm:w-56",
 };
 
-const fallbackImageSrc = "/team/horned-frog.png";
+const fallbackImageSrc = "/team/generic-profile.svg";
 
 export function TeamPhoto({ alt, imageSrc, size = "md" }: TeamPhotoProps) {
   const src = imageSrc ?? fallbackImageSrc;
