@@ -38,7 +38,19 @@ export const principalInvestigator: PrincipalInvestigator = {
   bio: `Dr. Robin Chataut is an Assistant Professor and Director of Graduate Studies in the Department of Computer Science at Texas Christian University (TCU), where he leads the NextGen AI Research Lab. His research focuses on Artificial Intelligence, Cybersecurity, Large Language Models (LLMs), Trustworthy AI, AI for Healthcare, and Next-Generation Wireless Networks (5G/6G). His work has been published in leading venues including IEEE Access, Sensors, ACM conferences, AAAI workshops, and IFIP DBSec. He is a Senior Member of IEEE and actively collaborates with students and researchers on advancing secure, trustworthy, and human-centered AI systems.`,
 };
 
-export const currentStudents: StudentMember[] = [];
+export const currentStudents: StudentMember[] = [
+  {
+    id: "jayapradeep-srinivasan",
+    name: "JayaPradeep Srinivasan",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on developing AI-powered tutoring tools for students.",
+    imageSrc: "/team/jaypradeep.png",
+  },
+  {
+    id: "griffin-kuchar",
+    name: "Griffin Kuchar",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on AI for healthcare in collaboration with the TCU Nursing Department and Children's Hospital.",
+  },
+];
 
 export const pastStudents: TeamMember[] = [
   {
@@ -46,17 +58,6 @@ export const pastStudents: TeamMember[] = [
     name: "Gabby Campos",
     bio: "B.S. in Computer Science, Texas Christian University. Research on generating real world cyberattacks using LLMs and finding defense strategies.",
     imageSrc: "/team/gabby-campos.png",
-  },
-  {
-    id: "griffin-kuchar",
-    name: "Griffin Kuchar",
-    bio: "B.S. in Computer Science, Texas Christian University. Research on AI for healthcare in collaboration with the TCU Nursing Department and Children's Hospital.",
-  },
-  {
-    id: "jayapradeep-srinivasan",
-    name: "JayaPradeep Srinivasan",
-    bio: "B.S. in Computer Science, Texas Christian University. Research on developing AI-powered tutoring tools for students.",
-    imageSrc: "/team/jaypradeep.png",
   },
   {
     id: "riley-phan",
