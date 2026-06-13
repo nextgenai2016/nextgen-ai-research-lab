@@ -45,6 +45,7 @@ export const currentStudents: StudentMember[] = [
     id: "griffin-kuchar",
     name: "Griffin Kuchar",
     bio: "B.S. in Computer Science, Texas Christian University. Research on AI for healthcare in collaboration with the TCU Nursing Department and Children's Hospital.",
+    imageSrc: "/team/griffin.jpeg",
   },
 ];
 
@@ -65,6 +66,7 @@ export const pastStudents: TeamMember[] = [
     id: "tam-nyugen",
     name: "Tam Nyugen",
     bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI-based phishing detection and tools to automate phishing detection in browsers.",
+    imageSrc: "/team/tam.jpeg",
   },
   {
     id: "rahul-shrestha",
@@ -76,6 +78,7 @@ export const pastStudents: TeamMember[] = [
     id: "nagendra-chaudhary",
     name: "Nagendra Chaudhary",
     bio: "B.S. in Computer Science, Texas Christian University. Research on AI-based intrusion detection tools.",
+    imageSrc: "/team/nagendra.jpeg",
   },
   {
     id: "madhavam-shahi",
@@ -86,13 +89,13 @@ export const pastStudents: TeamMember[] = [
     id: "yusuf-usman",
     name: "Yusuf Usman",
     bio: "M.S. in Cybersecurity, Quinnipiac University. Research on ML/AI techniques for phishing detection, attack and defense strategies, and malware detection.",
-    imageSrc: "/team/generic-profile.svg",
+    imageSrc: "/team/yusuf.jpeg",
   },
   {
     id: "mary-nankya",
     name: "Mary Nankya",
     bio: "M.S. in Computer Science, Fitchburg State University. Research on ML defense mechanisms, industrial control systems, and threat incidents.",
-    imageSrc: "/team/generic-profile.svg",
+    imageSrc: "/team/mary.jpeg",
   },
   {
     id: "aadesh-upadhyay",
@@ -104,7 +107,7 @@ export const pastStudents: TeamMember[] = [
     id: "daniel-j-vitashkevich",
     name: "Daniel J Vitashkevich",
     bio: "B.S. in Computer Science, Quinnipiac University. Research in Next Generation Networks.",
-    imageSrc: "/team/generic-profile.svg",
+    imageSrc: "/team/Daniel.jpeg",
   },
   {
     id: "muriuki-mureithi-caleb",
