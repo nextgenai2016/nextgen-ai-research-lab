@@ -3,8 +3,7 @@ import { Container } from "@/components/layout/Container";
 import { TeamPhoto } from "@/components/team/TeamPhoto";
 import { site } from "@/data/site";
 import { currentStudents, pastStudents, principalInvestigator, type TeamMember } from "@/data/team";
-import { FaFilePdf, FaGlobe, FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiGooglescholar } from "react-icons/si";
+import { BriefcaseBusiness, ExternalLink, FileText, Globe, GraduationCap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Team",
@@ -87,7 +86,7 @@ export default function TeamPage() {
                 title="Curriculum Vitae"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
               >
-                <FaFilePdf />
+                <FileText size={18} strokeWidth={1.8} />
               </a>
 
               <a
@@ -98,7 +97,7 @@ export default function TeamPage() {
                 title="Personal Website"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
               >
-                <FaGlobe />
+                <Globe size={18} strokeWidth={1.8} />
               </a>
 
               <a
@@ -109,7 +108,7 @@ export default function TeamPage() {
                 title="Google Scholar"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
               >
-                <SiGooglescholar />
+                <GraduationCap size={18} strokeWidth={1.8} />
               </a>
 
               <a
@@ -120,7 +119,7 @@ export default function TeamPage() {
                 title="GitHub"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
               >
-                <FaGithub />
+                <ExternalLink size={18} strokeWidth={1.8} />
               </a>
 
               <a
@@ -131,7 +130,7 @@ export default function TeamPage() {
                 title="LinkedIn"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
               >
-                <FaLinkedin />
+                <BriefcaseBusiness size={18} strokeWidth={1.8} />
               </a>
             </div>
           </div>
