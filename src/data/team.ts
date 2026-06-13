@@ -84,6 +84,7 @@ export const pastStudents: TeamMember[] = [
     id: "madhavam-shahi",
     name: "Madhavam Shahi",
     bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI for healthcare and supporting children who have faced trauma.",
+    imageSrc: "/team/madhavam.jpeg",
   },
   {
     id: "yusuf-usman",
@@ -101,7 +102,7 @@ export const pastStudents: TeamMember[] = [
     id: "aadesh-upadhyay",
     name: "Aadesh Upadhyay",
     bio: "M.S. in Computer Science, University of North Texas. Research on Cybersecurity and AI.",
-    imageSrc: "/team/generic-profile.svg",
+    imageSrc: "/team/aadesh.jpg",
   },
   {
     id: "daniel-j-vitashkevich",
