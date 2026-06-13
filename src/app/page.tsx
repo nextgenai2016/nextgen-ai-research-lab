@@ -112,7 +112,7 @@ function PrincipalInvestigatorPreview() {
 
 export default function HomePage() {
   return (
-    <Container className="pb-20 pt-16 sm:pb-24 sm:pt-24 lg:pt-28 min-[1920px]:pb-28 min-[1920px]:pt-32">
+    <Container className="pb-20 pt-8 sm:pb-24 sm:pt-12 lg:pt-14 min-[1920px]:pb-28 min-[1920px]:pt-16">
       <div className="mx-auto grid max-w-5xl gap-16 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-20 min-[1920px]:max-w-6xl min-[1920px]:grid-cols-[minmax(0,1fr)_24rem]">
         <main>
           <p className="font-mono text-[0.65rem] uppercase tracking-[0.34em] text-sky-800">
