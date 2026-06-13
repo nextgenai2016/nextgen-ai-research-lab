@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { ProfileLinks } from "@/components/team/ProfileLinks";
 import { TeamPhoto } from "@/components/team/TeamPhoto";
 import { contact } from "@/data/contact";
 import { newsItems, type NewsItem } from "@/data/news";
@@ -102,52 +103,7 @@ function PrincipalInvestigatorPreview() {
             {principalInvestigator.bio}
           </p>
 
-          <div className="mt-5 flex flex-wrap items-center gap-2">
-            <a
-              href="/contents/CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
-            >
-              CV
-            </a>
-
-            <a
-              href={principalInvestigator.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
-            >
-              Website
-            </a>
-
-            <a
-              href={principalInvestigator.googleScholar}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
-            >
-              Scholar
-            </a>
-
-            <a
-              href={principalInvestigator.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
-            >
-              GitHub
-            </a>
-
-            <a
-              href={principalInvestigator.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-zinc-300 bg-white px-3 py-2 font-mono text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-700 transition hover:border-sky-700 hover:text-sky-800"
-            >
-              LinkedIn
-            </a>
-          </div>
+          <ProfileLinks profile={principalInvestigator} className="mt-5" />
         </div>
       </div>
     </section>

@@ -5,7 +5,6 @@ export type PrincipalInvestigator = {
   department: string;
   email: string;
   imageSrc: string;
-  website: string;
   googleScholar: string;
   github: string;
   linkedin: string;
@@ -30,7 +29,6 @@ export const principalInvestigator: PrincipalInvestigator = {
   email: "robin.chataut@tcu.edu",
   imageSrc: "/team/robin-chataut.png",
 
-  website: "https://robinchataut.com",
   googleScholar: "https://scholar.google.com/citations?user=0ixaP0AAAAAJ",
   github: "https://github.com/robinchataut",
   linkedin: "https://www.linkedin.com/in/robinchataut/",

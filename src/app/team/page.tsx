@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
+import { ProfileLinks } from "@/components/team/ProfileLinks";
 import { TeamPhoto } from "@/components/team/TeamPhoto";
 import { site } from "@/data/site";
 import { currentStudents, pastStudents, principalInvestigator, type TeamMember } from "@/data/team";
-import { BriefcaseBusiness, ExternalLink, FileText, Globe, GraduationCap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Team",
@@ -77,62 +77,7 @@ export default function TeamPage() {
               {principalInvestigator.bio}
             </p>
 
-            <div className="mt-5 flex flex-wrap items-center gap-3">
-              <a
-                href="/contents/CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="CV"
-                title="Curriculum Vitae"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
-              >
-                <FileText size={18} strokeWidth={1.8} />
-              </a>
-
-              <a
-                href={principalInvestigator.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Website"
-                title="Personal Website"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
-              >
-                <Globe size={18} strokeWidth={1.8} />
-              </a>
-
-              <a
-                href={principalInvestigator.googleScholar}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Google Scholar"
-                title="Google Scholar"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
-              >
-                <GraduationCap size={18} strokeWidth={1.8} />
-              </a>
-
-              <a
-                href={principalInvestigator.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                title="GitHub"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
-              >
-                <ExternalLink size={18} strokeWidth={1.8} />
-              </a>
-
-              <a
-                href={principalInvestigator.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                title="LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700"
-              >
-                <BriefcaseBusiness size={18} strokeWidth={1.8} />
-              </a>
-            </div>
+            <ProfileLinks profile={principalInvestigator} className="mt-5" />
           </div>
         </article>
       </section>
