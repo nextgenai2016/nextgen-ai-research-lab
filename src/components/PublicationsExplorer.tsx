@@ -275,11 +275,8 @@ export function PublicationsExplorer({ publications }: PublicationsExplorerProps
       <section aria-live="polite">
         <div className="mb-2.5 border-b border-zinc-200 pb-3">
           <div>
-            <p className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-zinc-500">
-              {filteredPublications.length} of {publications.length} publications
-            </p>
-            <h2 className="mt-1 text-lg font-medium tracking-tight text-zinc-950">
-              Research Output
+            <h2 className="text-lg font-medium tracking-tight text-zinc-950">
+              Publications
             </h2>
           </div>
         </div>
