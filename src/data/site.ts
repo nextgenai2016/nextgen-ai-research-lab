@@ -1,6 +1,6 @@
 export const site = {
   name: "NextGen AI Research Lab",
-  tagline: "Advancing trustworthy AI through rigorous research.",
+  tagline: "A Texas Christian University research lab advancing trustworthy AI.",
   description:
-    "An interdisciplinary research group exploring machine learning, human - AI interaction, and systems for the next generation of intelligent technology.",
+    "NextGen AI Research Lab at Texas Christian University explores trustworthy AI, cybersecurity, large language models, healthcare AI, education, and next-generation intelligent systems.",
 } as const;
