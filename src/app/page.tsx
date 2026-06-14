@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { contact } from "@/data/contact";
@@ -62,6 +63,27 @@ export default function HomePage() {
     <Container className="pb-20 pt-8 sm:pb-24 sm:pt-12 lg:pt-14 min-[1920px]:pb-28 min-[1920px]:pt-16">
       <div className="mx-auto grid max-w-5xl gap-16 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-20 min-[1920px]:max-w-6xl min-[1920px]:grid-cols-[minmax(0,1fr)_24rem]">
         <main>
+          <div className="mb-10 flex flex-col gap-5 border-b border-zinc-200 pb-8 sm:flex-row sm:items-center">
+            <Image
+              src="/android-chrome-512x512.png"
+              alt="NextGen AI Research Lab logo"
+              width={112}
+              height={112}
+              priority
+              className="h-24 w-24 shrink-0 object-contain sm:h-28 sm:w-28"
+            />
+            <div>
+              <p className="font-mono text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-sky-800">
+                Welcome
+              </p>
+              <p className="mt-3 max-w-2xl text-base leading-7 text-zinc-700">
+                Welcome to the NextGen AI Research Lab, where students and researchers advance
+                trustworthy AI, large language models, cybersecurity, healthcare AI, and
+                next-generation intelligent systems.
+              </p>
+            </div>
+          </div>
+
           <p className="font-mono text-[0.65rem] uppercase tracking-[0.34em] text-sky-800">
             Texas Christian University · NextGen AI
           </p>
