@@ -10,7 +10,7 @@ type PublicationsExplorerProps = {
 
 type FilterGroupProps = {
   title: string;
-  options: { label: string; value: string; count: number }[];
+  options: { label: string; value: string }[];
   selected: Set<string>;
   onToggle: (value: string) => void;
 };
@@ -26,6 +26,13 @@ const linkLabels: Record<PublicationLinkKey, string> = {
 };
 
 const linkOrder: PublicationLinkKey[] = ["paper", "doi", "citation", "code", "demo"];
+
+const publicationTypeLabels: Record<PublicationType, string> = {
+  Book: "Book",
+  Chapter: "Book Chapter",
+  Conference: "Conference",
+  Journal: "Journal",
+};
 
 function countValues<T extends string | number>(
   publications: Publication[],
@@ -58,9 +65,6 @@ function FilterGroup({ title, options, selected, onToggle }: FilterGroupProps) {
               className="h-3 w-3 rounded-sm border-zinc-300 bg-white text-sky-600 accent-sky-600"
             />
             <span className="min-w-0 flex-1 truncate">{option.label}</span>
-            <span className="font-mono text-[0.65rem] text-zinc-600">
-              {option.count}
-            </span>
           </label>
         ))}
       </div>
@@ -107,7 +111,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
               publication.type,
             )}`}
           >
-            {publication.type}
+            {publicationTypeLabels[publication.type]}
           </span>
           <span className="font-mono text-[0.7rem] text-zinc-500 sm:mt-2 sm:block">
             {publication.year}
@@ -161,32 +165,26 @@ export function PublicationsExplorer({ publications }: PublicationsExplorerProps
   const [selectedYears, setSelectedYears] = useState<Set<string>>(new Set());
   const [searchTerm, setSearchTerm] = useState("");
 
-  const typeCounts = useMemo(
-    () => countValues(publications, (publication) => [publication.type]),
-    [publications],
-  );
   const yearCounts = useMemo(
     () => countValues(publications, (publication) => [publication.year]),
     [publications],
   );
   const typeOptions = useMemo(
     () =>
-      publicationTypes.map((type) => ({
-        label: type,
+      publicationTypes.filter((type) => type !== "Book").map((type) => ({
+        label: publicationTypeLabels[type],
         value: type,
-        count: typeCounts.get(type) ?? 0,
       })),
-    [typeCounts],
+    [],
   );
 
   const yearOptions = useMemo(
     () =>
       Array.from(yearCounts.entries())
         .sort(([a], [b]) => b - a)
-        .map(([year, count]) => ({
+        .map(([year]) => ({
           label: String(year),
           value: String(year),
-          count,
         })),
     [yearCounts],
   );
