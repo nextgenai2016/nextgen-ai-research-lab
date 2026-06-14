@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { contact } from "@/data/contact";
@@ -63,27 +62,6 @@ export default function HomePage() {
     <Container className="pb-20 pt-8 sm:pb-24 sm:pt-12 lg:pt-14 min-[1920px]:pb-28 min-[1920px]:pt-16">
       <div className="mx-auto grid max-w-5xl gap-16 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-20 min-[1920px]:max-w-6xl min-[1920px]:grid-cols-[minmax(0,1fr)_24rem]">
         <main>
-          <div className="mb-10 flex flex-col gap-5 border-b border-zinc-200 pb-8 sm:flex-row sm:items-center">
-            <Image
-              src="/Lab logo.png"
-              alt="NextGen AI Research Lab logo"
-              width={380}
-              height={210}
-              priority
-              className="h-auto w-48 shrink-0 object-contain sm:w-56"
-            />
-            <div>
-              <p className="font-mono text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-sky-800">
-                Welcome
-              </p>
-              <p className="mt-3 max-w-2xl text-base leading-7 text-zinc-700">
-                Welcome to the NextGen AI Research Lab, where students and researchers advance
-                trustworthy AI, large language models, cybersecurity, healthcare AI, and
-                next-generation intelligent systems.
-              </p>
-            </div>
-          </div>
-
           <p className="font-mono text-[0.65rem] uppercase tracking-[0.34em] text-sky-800">
             Texas Christian University · NextGen AI
           </p>
@@ -96,8 +74,10 @@ export default function HomePage() {
             Advancing trustworthy AI through rigorous research.
           </p>
 
-          <blockquote className="mt-8 border-l-4 border-sky-800 pl-5 font-serif text-xl italic leading-relaxed text-zinc-950">
-            AI should make people more capable, not less.
+          <blockquote className="mt-8 border-l-4 border-sky-800 pl-5 text-lg leading-8 text-zinc-800">
+            Welcome to the NextGen AI Research Lab, where students and researchers advance
+            trustworthy AI, large language models, cybersecurity, healthcare AI, and next-generation
+            intelligent systems.
           </blockquote>
 
           <div className="mt-10 space-y-8">
