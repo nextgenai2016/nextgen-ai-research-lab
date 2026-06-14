@@ -28,7 +28,7 @@ function NavLinks({
     <ul
       className={
         variant === "inline"
-          ? "flex items-center gap-8 min-[1920px]:gap-10"
+          ? "flex items-center gap-7 min-[1920px]:gap-9"
           : "flex flex-col gap-0.5"
       }
     >
@@ -36,7 +36,7 @@ function NavLinks({
         const active = isActivePath(pathname, item.href);
         const base =
           variant === "inline"
-            ? "font-mono text-[0.65rem] font-semibold uppercase tracking-[0.2em] transition-colors"
+            ? "font-mono text-xs font-semibold uppercase tracking-[0.18em] transition-colors min-[1920px]:text-sm"
             : "block rounded-lg px-4 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] transition-colors";
         const state = active
           ? "text-sky-800"
@@ -70,7 +70,7 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-100 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-sky-100 bg-sky-50/95 shadow-sm shadow-sky-950/5 backdrop-blur">
       <div className={layoutShell}>
         <div className="flex h-16 items-center justify-between gap-6 min-[1920px]:h-20">
           <Link

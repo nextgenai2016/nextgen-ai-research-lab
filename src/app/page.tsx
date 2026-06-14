@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { contact } from "@/data/contact";
@@ -62,21 +63,30 @@ export default function HomePage() {
     <Container className="pb-20 pt-8 sm:pb-24 sm:pt-12 lg:pt-14 min-[1920px]:pb-28 min-[1920px]:pt-16">
       <div className="mx-auto grid max-w-5xl gap-16 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-20 min-[1920px]:max-w-6xl min-[1920px]:grid-cols-[minmax(0,1fr)_24rem]">
         <main>
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.34em] text-sky-800">
-            Texas Christian University · NextGen AI
-          </p>
+          <div className="flex flex-col gap-8 border-b border-sky-100 pb-8 sm:flex-row sm:items-center sm:justify-between">
+            <div className="min-w-0">
+              <h1 className="font-serif text-5xl font-semibold tracking-tight text-sky-900 sm:text-6xl min-[1920px]:text-7xl">
+                NextGen AI Research Lab
+              </h1>
 
-          <h1 className="mt-5 font-serif text-5xl font-semibold tracking-tight text-sky-900 sm:text-6xl min-[1920px]:text-7xl">
-            NextGen AI Research Lab
-          </h1>
+              <p className="mt-3 font-serif text-base italic text-zinc-500">
+                Advancing trustworthy AI through rigorous research.
+              </p>
+            </div>
 
-          <p className="mt-2 font-serif text-base italic text-zinc-500">
-            Advancing trustworthy AI through rigorous research.
-          </p>
+            <Image
+              src="/Lab logo.png"
+              alt="NextGen AI Research Lab logo"
+              width={380}
+              height={210}
+              priority
+              className="h-auto w-52 shrink-0 object-contain sm:w-60 lg:w-64"
+            />
+          </div>
 
           <blockquote className="mt-8 border-l-4 border-sky-800 pl-5 text-lg leading-8 text-zinc-800">
-            Welcome to the NextGen AI Research Lab, where students and researchers advance
-            trustworthy AI, large language models, cybersecurity, healthcare AI, and next-generation
+            Welcome to the NextGen AI Research Lab. We work to advance trustworthy AI, large
+            language models, cybersecurity, healthcare AI, education, and next-generation
             intelligent systems.
           </blockquote>
 
