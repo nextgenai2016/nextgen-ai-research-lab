@@ -8,6 +8,7 @@ export type PrincipalInvestigator = {
   address: string;
   education: string[];
   imageSrc: string;
+  tcuProfile: string;
   googleScholar: string;
   linkedin: string;
   bio: string;
@@ -37,6 +38,7 @@ export const principalInvestigator: PrincipalInvestigator = {
   ],
   imageSrc: "/team/robin-chataut.png",
 
+  tcuProfile: "https://cse.tcu.edu/faculty-staff/view/robin-chataut",
   googleScholar: "https://scholar.google.com/citations?user=0ixaP0AAAAAJ",
   linkedin: "https://www.linkedin.com/in/robinchataut/",
 

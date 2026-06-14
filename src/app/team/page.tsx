@@ -38,11 +38,13 @@ function MemberList({ members }: { members: TeamMember[] }) {
 }
 
 export default function TeamPage() {
+  const piBioParagraphs = principalInvestigator.bio.split("\n\n");
+
   return (
     <Container className="pb-20 pt-8 sm:pb-24 sm:pt-10">
       <section id="principal-investigator" className="scroll-mt-24">
         <SectionTitle>Principal Investigator</SectionTitle>
-        <article className="flex flex-col gap-6 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm sm:flex-row sm:items-start sm:gap-8">
+        <article className="flex flex-col gap-8 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm sm:p-8 lg:flex-row lg:items-start lg:gap-10">
           <TeamPhoto
             name={principalInvestigator.name}
             alt={principalInvestigator.name}
@@ -50,23 +52,23 @@ export default function TeamPage() {
             size="lg"
           />
           <div className="min-w-0 flex-1">
-            <h3 className="text-2xl font-semibold text-zinc-950">
+            <h3 className="text-3xl font-semibold tracking-tight text-zinc-950">
               {principalInvestigator.name}
             </h3>
 
-            <p className="mt-2 text-sm font-medium leading-relaxed text-zinc-700">
+            <p className="mt-3 text-base font-medium leading-relaxed text-zinc-800">
               {principalInvestigator.title}
             </p>
 
-            <p className="mt-1 text-sm text-zinc-600">
+            <p className="mt-1 text-sm text-zinc-600 sm:text-base">
               {principalInvestigator.department}
             </p>
 
-            <p className="text-sm text-zinc-600">
+            <p className="text-sm text-zinc-600 sm:text-base">
               {principalInvestigator.affiliation}
             </p>
 
-            <dl className="mt-5 grid gap-4 text-sm leading-relaxed text-zinc-600 sm:grid-cols-2">
+            <dl className="mt-6 grid gap-4 rounded-lg border border-zinc-100 bg-zinc-50 p-5 text-sm leading-relaxed text-zinc-600 sm:grid-cols-2">
               <div className="sm:col-span-2">
                 <dt className="font-semibold text-zinc-950">Education</dt>
                 <dd className="mt-1 space-y-1">
@@ -96,11 +98,13 @@ export default function TeamPage() {
               </div>
             </dl>
 
-            <p className="mt-4 text-sm leading-7 text-zinc-600">
-              {principalInvestigator.bio}
-            </p>
+            <div className="mt-7 space-y-5 text-base leading-8 text-zinc-700">
+              {piBioParagraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
 
-            <ProfileLinks profile={principalInvestigator} className="mt-5" />
+            <ProfileLinks profile={principalInvestigator} className="mt-7" />
           </div>
         </article>
       </section>

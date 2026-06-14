@@ -1,12 +1,15 @@
 import type { PrincipalInvestigator } from "@/data/team";
 
 type ProfileLinksProps = {
-  profile: Pick<PrincipalInvestigator, "googleScholar" | "linkedin">;
+  profile: Pick<PrincipalInvestigator, "tcuProfile" | "googleScholar" | "linkedin">;
   className?: string;
 };
 
 const linkClass =
   "flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 transition hover:border-violet-500 hover:text-violet-700";
+
+const buttonLinkClass =
+  "inline-flex h-10 items-center rounded-full border border-sky-200 bg-sky-50 px-4 text-sm font-semibold text-sky-800 transition hover:border-sky-300 hover:bg-sky-100 hover:text-sky-950";
 
 function GoogleScholarLogo() {
   return (
@@ -28,6 +31,15 @@ function LinkedInLogo() {
 export function ProfileLinks({ profile, className = "" }: ProfileLinksProps) {
   return (
     <div className={`flex flex-wrap items-center gap-3 ${className}`}>
+      <a
+        href={profile.tcuProfile}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={buttonLinkClass}
+      >
+        TCU Profile
+      </a>
+
       <a
         href={profile.googleScholar}
         target="_blank"
