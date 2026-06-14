@@ -66,10 +66,6 @@ export default function HomePage() {
             NextGen AI Research Lab
           </h1>
 
-          <p className="mt-3 font-serif text-base italic text-zinc-500">
-            Advancing trustworthy AI through rigorous research.
-          </p>
-
           <p className="mt-8 max-w-3xl border-l-4 border-sky-800 pl-5 text-lg leading-8 text-zinc-800">
             Welcome to the NextGen AI Research Lab. We work to advance trustworthy AI, large
             language models, cybersecurity, healthcare AI, education, and next-generation
