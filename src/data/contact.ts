@@ -10,9 +10,9 @@ export const contact: ContactInfo = {
   email: "ailabs@tcu.edu",
 
   address: [
-    "College of Science and Engineering",
+    "Tucker Technology Center, Room TUC 326",
     "2840 West Bowie Street",
-    "Fort Worth, Texas, 76109",
+    "Fort Worth, Texas 76109",
   ],
   social: [
     { label: "GitHub", href: "https://github.com" },

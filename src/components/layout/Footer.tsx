@@ -20,6 +20,7 @@ export function Footer() {
             <a href={`mailto:${contact.email}`} className={`mt-2 block ${emailLinkClass}`}>
               {contact.email}
             </a>
+            <p className="mt-2 text-xs text-zinc-500">{contact.address.join(" · ")}</p>
           </address>
         </div>
       </div>
