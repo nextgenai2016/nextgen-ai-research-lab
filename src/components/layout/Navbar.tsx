@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -76,9 +77,19 @@ export function Navbar() {
           <Link
             href="/"
             aria-label={`${site.name} — home`}
-            className="min-w-0 shrink-0 truncate font-serif text-base font-semibold tracking-tight text-sky-900 transition-opacity hover:opacity-75 min-[1920px]:text-lg"
+            className="flex min-w-0 shrink-0 items-center gap-3 transition-opacity hover:opacity-80"
           >
-            {brandShort}
+            <Image
+              src="/Lab logo.png"
+              alt=""
+              width={120}
+              height={66}
+              priority
+              className="h-10 w-auto shrink-0 object-contain min-[1920px]:h-12"
+            />
+            <span className="truncate font-serif text-base font-semibold tracking-tight text-sky-900 min-[1920px]:text-lg">
+              {brandShort}
+            </span>
           </Link>
 
           <nav className="hidden items-center justify-end lg:flex" aria-label="Main">
