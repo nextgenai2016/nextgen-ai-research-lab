@@ -65,12 +65,12 @@ export default function HomePage() {
         <main>
           <div className="mb-10 flex flex-col gap-5 border-b border-zinc-200 pb-8 sm:flex-row sm:items-center">
             <Image
-              src="/android-chrome-512x512.png"
+              src="/Lab logo.png"
               alt="NextGen AI Research Lab logo"
-              width={112}
-              height={112}
+              width={380}
+              height={210}
               priority
-              className="h-24 w-24 shrink-0 object-contain sm:h-28 sm:w-28"
+              className="h-auto w-48 shrink-0 object-contain sm:w-56"
             />
             <div>
               <p className="font-mono text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-sky-800">
