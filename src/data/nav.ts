@@ -6,9 +6,12 @@ export type NavItem = {
 
 export const mainNav: NavItem[] = [
   { href: "/", label: "Home" },
+  { href: "/publications", label: "Publications" },
+  { href: "/research", label: "Projects" },
+  { href: "/news", label: "News" },
   {
     href: "/team",
-    label: "Research Team",
+    label: "People",
     children: [
       { href: "/team#principal-investigator", label: "PI" },
       { href: "/team#current-students", label: "Current Students" },
@@ -16,7 +19,4 @@ export const mainNav: NavItem[] = [
       { href: "/open-positions", label: "Open Positions" },
     ],
   },
-  { href: "/news", label: "News" },
-  { href: "/research", label: "Research" },
-  { href: "/publications", label: "Publications" },
 ];
