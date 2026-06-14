@@ -20,13 +20,6 @@ export function Footer() {
             <a href={`mailto:${contact.email}`} className={`mt-2 block ${emailLinkClass}`}>
               {contact.email}
             </a>
-            <div className="mt-2 space-y-0.5 leading-relaxed">
-              {contact.address.map((line) => (
-                <span key={line} className="block">
-                  {line}
-                </span>
-              ))}
-            </div>
           </address>
         </div>
       </div>

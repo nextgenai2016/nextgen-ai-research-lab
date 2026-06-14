@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-import { contact } from "@/data/contact";
 import { newsItems, type NewsItem } from "@/data/news";
 
 const latestNews = newsItems.slice(0, 4);
@@ -85,26 +84,6 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Link
-              href="/research"
-              className="inline-flex items-center justify-center bg-sky-800 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-sky-900"
-            >
-              Our Research
-            </Link>
-            <Link
-              href="/publications"
-              className="inline-flex items-center justify-center border border-zinc-300 bg-white px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-zinc-800 transition hover:border-zinc-500"
-            >
-              Publications
-            </Link>
-            <a
-              href={`mailto:${contact.email}`}
-              className="inline-flex items-center justify-center border border-zinc-300 bg-white px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-zinc-800 transition hover:border-zinc-500"
-            >
-              Collaborate
-            </a>
-          </div>
         </main>
 
         <aside className="lg:pt-7">
