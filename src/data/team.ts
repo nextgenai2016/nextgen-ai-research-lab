@@ -4,6 +4,9 @@ export type PrincipalInvestigator = {
   affiliation: string;
   department: string;
   email: string;
+  phone: string;
+  address: string;
+  education: string[];
   imageSrc: string;
   googleScholar: string;
   linkedin: string;
@@ -26,6 +29,12 @@ export const principalInvestigator: PrincipalInvestigator = {
   affiliation: "Texas Christian University",
   department: "Department of Computer Science",
   email: "robin.chataut@tcu.edu",
+  phone: "(817)-257-7056",
+  address: "2840 West Bowie Street, Fort Worth, TX, USA, 76109",
+  education: [
+    "Ph.D. in Computer Science and Engineering, University of North Texas, 2020",
+    "B.E. in Electronics and Communication Engineering, Tribhuvan University, Pulchowk Campus, 2014",
+  ],
   imageSrc: "/team/robin-chataut.png",
 
   googleScholar: "https://scholar.google.com/citations?user=0ixaP0AAAAAJ",

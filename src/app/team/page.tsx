@@ -66,12 +66,35 @@ export default function TeamPage() {
               {principalInvestigator.affiliation}
             </p>
 
-            <a
-              href={`mailto:${principalInvestigator.email}`}
-              className="mt-3 inline-block text-sm text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
-            >
-              {principalInvestigator.email}
-            </a>
+            <dl className="mt-5 grid gap-4 text-sm leading-relaxed text-zinc-600 sm:grid-cols-2">
+              <div className="sm:col-span-2">
+                <dt className="font-semibold text-zinc-950">Education</dt>
+                <dd className="mt-1 space-y-1">
+                  {principalInvestigator.education.map((degree) => (
+                    <p key={degree}>{degree}</p>
+                  ))}
+                </dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-zinc-950">Phone</dt>
+                <dd className="mt-1">{principalInvestigator.phone}</dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-zinc-950">Email</dt>
+                <dd className="mt-1">
+                  <a
+                    href={`mailto:${principalInvestigator.email}`}
+                    className="text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
+                  >
+                    {principalInvestigator.email}
+                  </a>
+                </dd>
+              </div>
+              <div className="sm:col-span-2">
+                <dt className="font-semibold text-zinc-950">Address</dt>
+                <dd className="mt-1">{principalInvestigator.address}</dd>
+              </div>
+            </dl>
 
             <p className="mt-4 text-sm leading-7 text-zinc-600">
               {principalInvestigator.bio}
