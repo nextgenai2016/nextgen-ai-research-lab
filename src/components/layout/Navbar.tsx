@@ -8,8 +8,7 @@ import { layoutShell } from "@/components/layout/shell";
 import { mainNav } from "@/data/nav";
 import { site } from "@/data/site";
 
-/** Short label for the bar; full name stays in footer / metadata. */
-const brandShort = "NextGen AI Research Lab";
+const brandShort = "Texas Christian University";
 
 function isActivePath(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
