@@ -41,6 +41,53 @@ function NavLinks({
         const state = active
           ? "text-sky-800"
           : "text-zinc-700 hover:bg-zinc-100 hover:text-sky-800";
+
+        if (item.children && variant === "inline") {
+          return (
+            <li key={item.href} className="group relative">
+              <Link href={item.href} onClick={onNavigate} className={`${base} ${state}`}>
+                {item.label}
+              </Link>
+              <div className="invisible absolute left-0 top-full z-50 pt-4 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="w-56 rounded-md border border-sky-100 bg-white p-2 shadow-lg shadow-sky-950/10">
+                  {item.children.map((child) => (
+                    <Link
+                      key={child.href}
+                      href={child.href}
+                      className="block rounded px-3 py-2 text-sm font-medium text-zinc-700 transition hover:bg-sky-50 hover:text-sky-800"
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </li>
+          );
+        }
+
+        if (item.children && variant === "stacked") {
+          return (
+            <li key={item.href}>
+              <Link href={item.href} onClick={onNavigate} className={`${base} ${state}`}>
+                {item.label}
+              </Link>
+              <ul className="ml-4 border-l border-zinc-200 pl-3">
+                {item.children.map((child) => (
+                  <li key={child.href}>
+                    <Link
+                      href={child.href}
+                      onClick={onNavigate}
+                      className="block rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-sky-800"
+                    >
+                      {child.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          );
+        }
+
         return (
           <li key={item.href}>
             <Link href={item.href} onClick={onNavigate} className={`${base} ${state}`}>

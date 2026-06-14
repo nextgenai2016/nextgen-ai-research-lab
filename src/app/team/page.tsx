@@ -40,7 +40,7 @@ function MemberList({ members }: { members: TeamMember[] }) {
 export default function TeamPage() {
   return (
     <Container className="pb-20 pt-8 sm:pb-24 sm:pt-10">
-      <section>
+      <section id="principal-investigator" className="scroll-mt-24">
         <SectionTitle>Principal Investigator</SectionTitle>
         <article className="flex flex-col gap-6 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm sm:flex-row sm:items-start sm:gap-8">
           <TeamPhoto
@@ -82,7 +82,7 @@ export default function TeamPage() {
         </article>
       </section>
 
-      <section className="mt-20">
+      <section id="current-students" className="mt-20 scroll-mt-24">
         <SectionTitle>Current Students</SectionTitle>
         {currentStudents.length > 0 ? (
           <MemberList members={currentStudents} />
@@ -96,7 +96,7 @@ export default function TeamPage() {
         )}
       </section>
 
-      <section className="mt-20">
+      <section id="past-students" className="mt-20 scroll-mt-24">
         <SectionTitle>Past Students</SectionTitle>
         <MemberList members={pastStudents} />
       </section>
