@@ -8,6 +8,14 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+    id: "news-000",
+    date: "August 2026",
+    year: 2026,
+    category: "Publication",
+    title:
+      "Paper accepted at ICPR 2026 AIHA: “Physiologically Validated Synthetic ECG Generation via LLM-Guided Constraint Enforcement”",
+  },
+  {
   id: "news-001",
   date: "June 2026",
   year: 2026,

@@ -21,6 +21,20 @@ export const publicationTypes: PublicationType[] = ["Book", "Chapter", "Conferen
 
 export const publications: Publication[] = [
   {
+    id: "physiologically-validated-synthetic-ecg-generation-2026",
+    title:
+      "Physiologically Validated Synthetic ECG Generation via LLM-Guided Constraint Enforcement",
+    type: "Conference",
+    venue: "ICPR 2026 (AIHA)",
+    year: 2026,
+    authors: ["S. Bhandari", "R. Chataut"],
+    summary:
+      "In Proceedings of the 4th International Workshop on Artificial Intelligence for Healthcare Applications (AIHA) at International Conference on Pattern Recognition (ICPR), August, 2026.",
+    links: {
+      paper: "",
+    },
+  },
+  {
     id: "llm-assisted-cyberattacks-break-down-dbsec-2026",
     title:
       "Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries",
