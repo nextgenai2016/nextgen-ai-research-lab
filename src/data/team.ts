@@ -62,6 +62,12 @@ export const currentStudents: StudentMember[] = [
     bio: "B.S. in Computer Science, Texas Christian University. Research on AI for healthcare in collaboration with the TCU Nursing Department and Children's Hospital.",
     imageSrc: "/team/griffin.jpeg",
   },
+  {
+    id: "tam-nyugen",
+    name: "Tam Nyugen",
+    bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI-based phishing detection and tools to automate phishing detection in browsers.",
+    imageSrc: "/team/tam.jpeg",
+  },
 ];
 
 export const pastStudents: TeamMember[] = [
@@ -78,12 +84,6 @@ export const pastStudents: TeamMember[] = [
     imageSrc: "/team/riley-phan.png",
   },
   {
-    id: "tam-nyugen",
-    name: "Tam Nyugen",
-    bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI-based phishing detection and tools to automate phishing detection in browsers.",
-    imageSrc: "/team/tam.jpeg",
-  },
-  {
     id: "rahul-shrestha",
     name: "Rahul Shrestha",
     bio: "B.S. in Computer Science, Texas Christian University. Research on adversarial attacks using LLMs and the impact of AI on undergraduate education.",
@@ -94,6 +94,12 @@ export const pastStudents: TeamMember[] = [
     name: "Nagendra Chaudhary",
     bio: "B.S. in Computer Science, Texas Christian University. Research on AI-based intrusion detection tools.",
     imageSrc: "/team/nagendra.jpeg",
+  },
+  {
+    id: "Sujit-Bhandari",
+    name: "Sujit Bhandari",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on AI-for Healthcare.",
+    imageSrc: "/team/sujit.jpeg",
   },
   {
     id: "madhavam-shahi",
