@@ -266,7 +266,7 @@ export const publications: Publication[] = [
     year: 2024,
     authors: ["R. Chataut", "P. K. Gyawali", "Y. Usman"],
     summary:
-      "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2024), Las Vegas, NV, USA, 2024.",
+      "In Proceedings of the IEEE Computing and Communication Conference (CCWC 2024), Las Vegas, NV, USA, 2024.",
     links: {
       doi: "https://doi.org/10.1109/CCWC60891.2024.10427626",
     },
@@ -370,7 +370,7 @@ export const publications: Publication[] = [
     year: 2022,
     authors: ["U. K. Dey", "R. Akl", "R. Chataut"],
     summary:
-      "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2022), Las Vegas, NV, USA, 2022.",
+      "In Proceedings of the IEEE Computing and Communication Conference (CCWC 2022), Las Vegas, NV, USA, 2022.",
     links: {
       doi: "https://doi.org/10.1109/CCWC54503.2022.9720849",
     },
@@ -500,7 +500,7 @@ export const publications: Publication[] = [
     year: 2020,
     authors: ["R. Chataut", "R. Akl", "M. Robaei"],
     summary:
-      "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2020), Las Vegas, NV, USA, 2020.",
+      "In Proceedings of the IEEE Computing and Communication Conference (CCWC 2020), Las Vegas, NV, USA, 2020.",
     links: {
       doi: "https://doi.org/10.1109/CCWC47524.2020.9031209",
     },
@@ -513,7 +513,7 @@ export const publications: Publication[] = [
     year: 2020,
     authors: ["U. K. Dey", "R. Akl", "R. Chataut"],
     summary:
-      "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2020), Las Vegas, NV, USA, 2020.",
+      "In Proceedings of the IEEE Computing and Communication Conference (CCWC 2020), Las Vegas, NV, USA, 2020.",
     links: {
       doi: "https://doi.org/10.1109/CCWC47524.2020.9031225",
     },
@@ -591,7 +591,7 @@ export const publications: Publication[] = [
     year: 2018,
     authors: ["R. Chataut", "R. Akl"],
     summary:
-      "In Proceedings of the IEEE Computing and Communication Workshop and Conference (CCWC 2018), Las Vegas, NV, USA, 2018.",
+      "In Proceedings of the IEEE Computing and Communication Conference (CCWC 2018), Las Vegas, NV, USA, 2018.",
     links: {
       doi: "https://doi.org/10.1109/CCWC.2018.8301625",
     },
