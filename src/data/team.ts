@@ -87,7 +87,7 @@ export const pastStudents: TeamMember[] = [
     id: "rahul-shrestha",
     name: "Rahul Shrestha",
     bio: "B.S. in Computer Science, Texas Christian University. Research on adversarial attacks using LLMs and the impact of AI on undergraduate education.",
-    imageSrc: "/team/rahul-shrestha-2026.png",
+    imageSrc: "/team/rahul-2026.png",
   },
   {
     id: "nagendra-chaudhary",
