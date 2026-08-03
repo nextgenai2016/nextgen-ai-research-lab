@@ -80,7 +80,7 @@ function LabDirector() {
             {principalInvestigator.name}
           </h2>
           <p className="mt-2 text-base font-medium leading-relaxed text-zinc-800">
-            Assistant Professor
+            {principalInvestigator.title}
           </p>
           <p className="mt-1 text-sm leading-relaxed text-zinc-600">
             {principalInvestigator.department}

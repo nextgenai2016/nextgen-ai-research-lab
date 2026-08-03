@@ -16,7 +16,7 @@ export const mainNav: NavItem[] = [
       { href: "/team#principal-investigator", label: "PI" },
       { href: "/team#current-students", label: "Current Students" },
       { href: "/team#past-students", label: "Past Students" },
-      { href: "/open-positions", label: "Open Positions" },
     ],
   },
+  { href: "/open-positions", label: "Open Positions" },
 ];

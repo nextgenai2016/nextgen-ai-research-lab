@@ -26,7 +26,7 @@ export type StudentMember = TeamMember;
 
 export const principalInvestigator: PrincipalInvestigator = {
   name: "Robin Chataut",
-  title: "Assistant Professor and Director of Graduate Studies",
+  title: "Assistant Professor of Computer Science and Director of Graduate Studies",
   affiliation: "Texas Christian University",
   department: "Department of Computer Science",
   email: "robin.chataut@tcu.edu",
@@ -42,11 +42,15 @@ export const principalInvestigator: PrincipalInvestigator = {
   googleScholar: "https://scholar.google.com/citations?user=0ixaP0AAAAAJ",
   linkedin: "https://www.linkedin.com/in/robinchataut/",
 
-  bio: `Dr. Robin Chataut is an Assistant Professor of Computer Science and Director of Graduate Studies in the Department of Computer Science at Texas Christian University. He earned his Ph.D. in Computer Science and Engineering from the University of North Texas. His research interests span artificial intelligence (AI), machine learning (ML), cybersecurity, human-centered computing, and next-generation wireless communication systems.
+  bio: `Dr. Robin Chataut is the Founder and Director of the TCU NextGen AI Lab, Assistant Professor, and Director of Graduate Studies in the Department of Computer Science at Texas Christian University (TCU). He earned his Ph.D. in Computer Science and Engineering from the University of North Texas.
 
-Dr. Chataut is also the Director of the TCU NextGen AI Lab, where he leads interdisciplinary research on trustworthy and human-centered AI, AI-driven cybersecurity, multimodal learning, healthcare AI, and emerging applications of large language models (LLMs). His current work investigates adversarial AI for offensive and defensive cyber operations, secure authentication, malware and intrusion detection, AI-assisted education, and signal processing techniques for physical-layer security in 5G, beyond 5G (B5G), and 6G networks.
+His research focuses on developing trustworthy, secure, and human-centered artificial intelligence systems that address real-world challenges. His work spans artificial intelligence, machine learning, cybersecurity, large language models (LLMs), multimodal AI, human-centered computing, healthcare AI, and next-generation wireless communication systems.
 
-His research has been supported by the National Science Foundation (NSF), NASA, and other federal and state funding agencies. Dr. Chataut has authored numerous peer-reviewed publications in AI, cybersecurity, and wireless communications and actively mentors undergraduate, master's, and doctoral students in cutting-edge research projects. He is a Senior Member of IEEE and serves as a reviewer, editor, and program committee member for leading journals and conferences. Through his research, teaching, and leadership, he aims to advance secure, trustworthy, and socially responsible technologies that address real-world challenges.`,
+At the TCU NextGen AI Lab, Dr. Chataut leads interdisciplinary research at the intersection of AI and cybersecurity, including adversarial AI, AI-powered cyber defense, secure authentication, malware and intrusion detection, privacy-preserving machine learning, AI-assisted education, educational technologies, and intelligent systems for healthcare. His research also explores AI-driven signal processing and physical-layer security for 5G, beyond-5G (B5G), and 6G wireless networks.
+
+His research has been supported by the National Science Foundation (NSF), NASA, the National Institutes of Health (NIH), and other federal and state funding agencies. He has authored numerous peer-reviewed publications in leading AI, cybersecurity, and wireless communications venues and actively mentors undergraduate, master's, and Ph.D. students in cutting-edge research.
+
+Dr. Chataut is a Senior Member of the IEEE and serves as a reviewer, editor, and program committee member for leading international journals and conferences. Through the TCU NextGen AI Lab, he is committed to advancing innovative AI technologies that are secure, trustworthy, and socially responsible while training the next generation of AI researchers and technology leaders.`,
 };
 
 export const currentPhdStudents: StudentMember[] = [];
