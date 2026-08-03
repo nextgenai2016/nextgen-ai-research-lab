@@ -48,7 +48,7 @@ His research focuses on developing trustworthy, secure, and human-centered artif
 
 At the TCU NextGen AI Lab, Dr. Chataut leads interdisciplinary research at the intersection of AI and cybersecurity, including adversarial AI, AI-powered cyber defense, secure authentication, malware and intrusion detection, privacy-preserving machine learning, AI-assisted education, educational technologies, and intelligent systems for healthcare. His research also explores AI-driven signal processing and physical-layer security for 5G, beyond-5G (B5G), and 6G wireless networks.
 
-His research has been supported by the National Science Foundation (NSF), NASA, the National Institutes of Health (NIH), and other federal and state funding agencies. He has authored numerous peer-reviewed publications in leading AI, cybersecurity, and wireless communications venues and actively mentors undergraduate, master's, and Ph.D. students in cutting-edge research.
+His research has been supported by the National Science Foundation (NSF), NASA, and other federal and state funding agencies. He has authored numerous peer-reviewed publications in leading AI, cybersecurity, and wireless communications venues and actively mentors undergraduate, master's, and Ph.D. students in cutting-edge research.
 
 Dr. Chataut is a Senior Member of the IEEE and serves as a reviewer, editor, and program committee member for leading international journals and conferences. Through the TCU NextGen AI Lab, he is committed to advancing innovative AI technologies that are secure, trustworthy, and socially responsible while training the next generation of AI researchers and technology leaders.`,
 };
