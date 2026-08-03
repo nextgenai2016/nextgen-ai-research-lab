@@ -6,7 +6,7 @@ import { newsItems, type NewsItem } from "@/data/news";
 import { principalInvestigator } from "@/data/team";
 
 const latestNews = newsItems.slice(0, 4);
-const labDirectorIntro = principalInvestigator.bio.split("\n\n")[0];
+const labDirectorBioParagraphs = principalInvestigator.bio.split("\n\n");
 
 const categoryLabels: Record<NewsItem["category"], string> = {
   Publication: "Paper",
@@ -62,12 +62,12 @@ function NewsPreview({ item }: { item: NewsItem }) {
 
 function LabDirector() {
   return (
-    <section className="mt-14 border-y border-zinc-200 py-10">
+    <section className="mx-auto mt-16 max-w-5xl border-y border-zinc-200 py-10 min-[1920px]:max-w-6xl">
       <p className="font-mono text-[0.63rem] font-semibold uppercase tracking-[0.28em] text-sky-800">
         Lab Director
       </p>
 
-      <div className="mt-6 flex flex-col gap-7 sm:flex-row sm:items-start">
+      <div className="mt-6 grid gap-8 lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12">
         <TeamPhoto
           name={principalInvestigator.name}
           alt={principalInvestigator.name}
@@ -107,9 +107,11 @@ function LabDirector() {
             </div>
           </dl>
 
-          <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-zinc-800">
-            {labDirectorIntro}
-          </p>
+          <div className="mt-5 space-y-5 text-[0.98rem] leading-7 text-zinc-800">
+            {labDirectorBioParagraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
 
           <ProfileLinks profile={principalInvestigator} className="mt-6" />
         </div>
@@ -146,7 +148,6 @@ export default function HomePage() {
             ))}
           </div>
 
-          <LabDirector />
         </main>
 
         <aside className="lg:pt-7">
@@ -171,6 +172,8 @@ export default function HomePage() {
           </Link>
         </aside>
       </div>
+
+      <LabDirector />
     </Container>
   );
 }

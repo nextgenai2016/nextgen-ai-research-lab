@@ -42,14 +42,16 @@ export const principalInvestigator: PrincipalInvestigator = {
   googleScholar: "https://scholar.google.com/citations?user=0ixaP0AAAAAJ",
   linkedin: "https://www.linkedin.com/in/robinchataut/",
 
-  bio: `Dr. Robin Chataut is an Assistant Professor of Computer Science at Texas Christian University (TCU), where he serves as Director of Graduate Studies for the Department of Computer Science. He earned his Ph.D. in Computer Science and Engineering from the University of North Texas. His research interests span artificial intelligence (AI), machine learning (ML), cybersecurity, human-centered computing, and next-generation wireless communication systems.
+  bio: `Dr. Robin Chataut is an Assistant Professor of Computer Science and Director of Graduate Studies in the Department of Computer Science at Texas Christian University. He earned his Ph.D. in Computer Science and Engineering from the University of North Texas. His research interests span artificial intelligence (AI), machine learning (ML), cybersecurity, human-centered computing, and next-generation wireless communication systems.
 
 Dr. Chataut is also the Director of the TCU NextGen AI Lab, where he leads interdisciplinary research on trustworthy and human-centered AI, AI-driven cybersecurity, multimodal learning, healthcare AI, and emerging applications of large language models (LLMs). His current work investigates adversarial AI for offensive and defensive cyber operations, secure authentication, malware and intrusion detection, AI-assisted education, and signal processing techniques for physical-layer security in 5G, beyond 5G (B5G), and 6G networks.
 
 His research has been supported by the National Science Foundation (NSF), NASA, and other federal and state funding agencies. Dr. Chataut has authored numerous peer-reviewed publications in AI, cybersecurity, and wireless communications and actively mentors undergraduate, master's, and doctoral students in cutting-edge research projects. He is a Senior Member of IEEE and serves as a reviewer, editor, and program committee member for leading journals and conferences. Through his research, teaching, and leadership, he aims to advance secure, trustworthy, and socially responsible technologies that address real-world challenges.`,
 };
 
-export const currentStudents: StudentMember[] = [
+export const currentPhdStudents: StudentMember[] = [];
+
+export const currentUndergraduateStudents: StudentMember[] = [
   {
     id: "jayapradeep-srinivasan",
     name: "JayaPradeep Srinivasan",
@@ -68,6 +70,11 @@ export const currentStudents: StudentMember[] = [
     bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI-based phishing detection and tools to automate phishing detection in browsers.",
     imageSrc: "/team/tam.jpeg",
   },
+];
+
+export const currentStudents: StudentMember[] = [
+  ...currentPhdStudents,
+  ...currentUndergraduateStudents,
 ];
 
 export const pastStudents: TeamMember[] = [
