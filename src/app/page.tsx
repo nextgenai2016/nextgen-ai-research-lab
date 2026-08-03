@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { ProfileLinks } from "@/components/team/ProfileLinks";
+import { TeamPhoto } from "@/components/team/TeamPhoto";
 import { newsItems, type NewsItem } from "@/data/news";
+import { principalInvestigator } from "@/data/team";
 
 const latestNews = newsItems.slice(0, 4);
+const labDirectorIntro = principalInvestigator.bio.split("\n\n")[0];
 
 const categoryLabels: Record<NewsItem["category"], string> = {
   Publication: "Paper",
@@ -56,6 +60,64 @@ function NewsPreview({ item }: { item: NewsItem }) {
   );
 }
 
+function LabDirector() {
+  return (
+    <section className="mt-14 border-y border-zinc-200 py-10">
+      <p className="font-mono text-[0.63rem] font-semibold uppercase tracking-[0.28em] text-sky-800">
+        Lab Director
+      </p>
+
+      <div className="mt-6 flex flex-col gap-7 sm:flex-row sm:items-start">
+        <TeamPhoto
+          name={principalInvestigator.name}
+          alt={principalInvestigator.name}
+          imageSrc={principalInvestigator.imageSrc}
+          size="md"
+        />
+
+        <div className="min-w-0 flex-1">
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
+            {principalInvestigator.name}
+          </h2>
+          <p className="mt-2 text-base font-medium leading-relaxed text-zinc-800">
+            Assistant Professor
+          </p>
+          <p className="mt-1 text-sm leading-relaxed text-zinc-600">
+            {principalInvestigator.department}
+          </p>
+          <p className="text-sm leading-relaxed text-zinc-600">
+            {principalInvestigator.affiliation}, Fort Worth, TX, USA
+          </p>
+
+          <dl className="mt-5 grid gap-3 text-sm leading-relaxed text-zinc-600">
+            <div>
+              <dt className="font-semibold text-zinc-950">Office</dt>
+              <dd className="mt-1">{principalInvestigator.address}</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-zinc-950">Email</dt>
+              <dd className="mt-1">
+                <a
+                  href={`mailto:${principalInvestigator.email}`}
+                  className="text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
+                >
+                  {principalInvestigator.email}
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-zinc-800">
+            {labDirectorIntro}
+          </p>
+
+          <ProfileLinks profile={principalInvestigator} className="mt-6" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function HomePage() {
   return (
     <Container className="pb-20 pt-8 sm:pb-24 sm:pt-12 lg:pt-14 min-[1920px]:pb-28 min-[1920px]:pt-16">
@@ -84,6 +146,7 @@ export default function HomePage() {
             ))}
           </div>
 
+          <LabDirector />
         </main>
 
         <aside className="lg:pt-7">
