@@ -11,7 +11,7 @@ export const mainNav: NavItem[] = [
   { href: "/news", label: "News" },
   {
     href: "/team",
-    label: "People",
+    label: "Team",
     children: [
       { href: "/team#principal-investigator", label: "PI" },
       { href: "/team#current-students", label: "Current Students" },
