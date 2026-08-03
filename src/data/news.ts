@@ -8,6 +8,14 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+    id: "dbsec-2026-paper-presented",
+    date: "Aug 1, 2026",
+    year: 2026,
+    category: "Publication",
+    title:
+      "Paper presented at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026): “Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries”",
+  },
+  {
     id: "news-000",
     date: "August 2026",
     year: 2026,
@@ -16,15 +24,23 @@ export const newsItems: NewsItem[] = [
       "Paper accepted at ICPR 2026 AIHA: “Physiologically Validated Synthetic ECG Generation via LLM-Guided Constraint Enforcement”",
   },
   {
-  id: "news-001",
-  date: "June 2026",
-  year: 2026,
-  category: "Publication",
-  title:
-    "Paper accepted at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026): 'Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries",
-},
+    id: "trustworthy-agentic-rag-systems-iui-2026-presented",
+    date: "July 2026",
+    year: 2026,
+    category: "Publication",
+    title:
+      "Paper presented at ACM IUI 2026 TRUST-CUA Workshop (ACM IUI), Paphos, Cyprus: “Designing Trustworthy Agentic RAG Systems through Modality-Separated Interaction and Error-Aware Memory”",
+  },
   {
-    id: "news-001",
+    id: "dbsec-2026-paper-accepted",
+    date: "June 2026",
+    year: 2026,
+    category: "Publication",
+    title:
+      "Paper accepted at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026): “Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries”",
+  },
+  {
+    id: "trustworthy-agentic-rag-systems-iui-2026-accepted",
     date: "May 2026",
     year: 2026,
     category: "Publication",
