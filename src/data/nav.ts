@@ -9,14 +9,6 @@ export const mainNav: NavItem[] = [
   { href: "/publications", label: "Publications" },
   { href: "/research", label: "Projects" },
   { href: "/news", label: "News" },
-  {
-    href: "/team",
-    label: "Team",
-    children: [
-      { href: "/team#principal-investigator", label: "PI" },
-      { href: "/team#current-students", label: "Current Students" },
-      { href: "/team#past-students", label: "Past Students" },
-    ],
-  },
+  { href: "/team", label: "Team" },
   { href: "/open-positions", label: "Open Positions" },
 ];
