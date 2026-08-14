@@ -53,7 +53,26 @@ His research has been supported by the National Science Foundation (NSF), NASA, 
 Dr. Chataut is a Senior Member of the IEEE and serves as a reviewer, editor, and program committee member for leading international journals and conferences. Through the TCU NextGen AI Lab, he is committed to advancing innovative AI technologies that are secure, trustworthy, and socially responsible while training the next generation of AI researchers and technology leaders.`,
 };
 
-export const currentPhdStudents: StudentMember[] = [];
+export const currentPhdStudents: StudentMember[] = [
+  {
+    id: "rahul-jha",
+    name: "Rahul Jha",
+    bio: "Ph.D. student in Computer Science at Texas Christian University.",
+    imageSrc: "/team/generic-profile.svg",
+  },
+  {
+    id: "gasmili-ali",
+    name: "Gasmili Ali",
+    bio: "Ph.D. student in Computer Science at Texas Christian University.",
+    imageSrc: "/team/generic-profile.svg",
+  },
+  {
+    id: "imran-hossain",
+    name: "Imran Hossain",
+    bio: "Ph.D. student in Computer Science at Texas Christian University.",
+    imageSrc: "/team/generic-profile.svg",
+  },
+];
 
 export const currentUndergraduateStudents: StudentMember[] = [
   {
