@@ -41,6 +41,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Paper accepted at ICPR 2026 AIHA: “Physiologically Validated Synthetic ECG Generation via LLM-Guided Constraint Enforcement”",
+    href: "https://aida.unicas.it/AIHA2026/index.html",
   },
   {
     id: "trustworthy-agentic-rag-systems-iui-2026-presented",
@@ -49,6 +50,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Paper presented at ACM IUI 2026 TRUST-CUA Workshop (ACM IUI), Paphos, Cyprus: “Designing Trustworthy Agentic RAG Systems through Modality-Separated Interaction and Error-Aware Memory”",
+    href: "https://sites.google.com/view/trust-cuaiui26/home",
   },
   {
     id: "dbsec-2026-paper-accepted",
@@ -57,6 +59,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Paper accepted at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026): “Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries”",
+    href: "https://doi.org/10.1007/978-3-032-33260-8_26",
   },
   {
     id: "trustworthy-agentic-rag-systems-iui-2026-accepted",
@@ -65,6 +68,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Paper accepted at ACM IUI 2026 TRUST-CUA Workshop (ACM IUI), Paphos, Cyprus: “Designing Trustworthy Agentic RAG Systems through Modality-Separated Interaction and Error-Aware Memory”",
+    href: "https://sites.google.com/view/trust-cuaiui26/home",
   },
   {
     id: "tcu-magazine-student-research-grants-spring-2026",
@@ -81,6 +85,7 @@ export const newsItems: NewsItem[] = [
     year: 2025,
     category: "Talk",
     title: "Delivered the TCU Faculty Lecture Series talk “Cybersecurity in the Age of AI”",
+    href: "https://calendar.tcu.edu/event/cybersecurity-in-the-age-of-ai-faculty-lecture-series",
   },
   {
     id: "news-003",
@@ -89,6 +94,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Paper accepted: “Large Language Models in Qualitative Analysis: Comparing Traditional and Researcher-Interpreted Approaches,” International Journal of Qualitative Methods, Vol. 25",
+    href: "https://doi.org/10.1177/16094069261426100",
   },
   {
     id: "news-004",
@@ -96,6 +102,7 @@ export const newsItems: NewsItem[] = [
     year: 2026,
     category: "Publication",
     title: "Six Posters Presented by Our Lab at SRS Symposium; Awarded Best Department Poster",
+    href: "https://srs.tcu.edu/review/winners",
   },
   {
     id: "news-005",
@@ -103,6 +110,7 @@ export const newsItems: NewsItem[] = [
     year: 2026,
     category: "Event",
     title: "Attended Lockheed Ethics in Engineering Case Competition, Bethesda, Maryland",
+    href: "https://vimeo.com/1181684287/557bfae8b9",
   },
   {
     id: "news-006",
@@ -110,6 +118,7 @@ export const newsItems: NewsItem[] = [
     year: 2026,
     category: "Award",
     title: "Finalist and Pitch Presenter, TCU Chancellor’s Innovation Prize 2026",
+    href: "https://www.tcu.edu/ai/innovation-prize.php",
   },
   {
     id: "news-007",
@@ -125,6 +134,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Reseach paper accepted at the AAAI Workshop on AI for Education (AI4EDU), Singapore, 2026",
+    href: "https://ai4ed.cc/workshops/aaai2026",
   },
   {
     id: "news-009",
@@ -139,6 +149,7 @@ export const newsItems: NewsItem[] = [
     year: 2025,
     category: "Event",
     title: "Attented Far.AI Alignment Workshop in San, Deigo, CA",
+    href: "https://www.far.ai/events/alignment-workshop",
   },
   {
     id: "news-011",
@@ -147,6 +158,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       '"AI, ML, and LLM Integration in 5G/6G Networks: A Comprehensive Survey of Architectures, Challenges, and Future Directions" Accepted at IEEE Access',
+    href: "https://doi.org/10.1109/ACCESS.2025.3608736",
   },
   {
     id: "news-012",
@@ -155,6 +167,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       '"Green Cybersecurity: Leveraging AI, ML, and LLMs to Optimize Energy, Threat Detection, and Sustainability Frameworks" Accepted at IEEE Access',
+    href: "https://doi.org/10.1109/ACCESS.2025.3602451",
   },
   {
     id: "news-013",
@@ -163,6 +176,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Research paper accepted at Thirty Seventh International Conference on Software Engineering and Knowledge Engineering (SEKE 2025)",
+    href: "https://doi.org/10.18293/seke2025-107",
   },
   {
     id: "news-014",
@@ -170,6 +184,7 @@ export const newsItems: NewsItem[] = [
     year: 2025,
     category: "Publication",
     title: "Three research paper accepted at IEEE World AI IoT Congress 2025",
+    href: "https://www.worldaiiotcongress.org/",
   },
   {
     id: "news-015",
@@ -178,6 +193,7 @@ export const newsItems: NewsItem[] = [
     category: "Talk",
     title:
       "Gave Research Talk at TCU Technology Seminar on AI, ML, and LLM for Next Generation Networks 2025",
+    href: "https://calendar.tcu.edu/event/tcu-technology-seminar",
   },
   {
     id: "news-016",
@@ -192,6 +208,7 @@ export const newsItems: NewsItem[] = [
     year: 2025,
     category: "Publication",
     title: "Published a book chapter, Introduction to Deepfake Technology and Its Early Foundations.",
+    href: "https://doi.org/10.4018/979-8-3693-6890-9.ch001",
   },
   {
     id: "news-018",
@@ -207,6 +224,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       'Paper published IEEE Access "Security and Privacy in E-Health Systems: A Review of AI and Machine Learning Techniques"',
+    href: "https://doi.org/10.1109/ACCESS.2024.3469215",
   },
   {
     id: "news-020",
@@ -215,6 +233,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       'Paper accepted at IEEE CSNet, Paris, France "Spam No More: A Cross-Model Analysis of Machine Learning Techniques and Large Language Model Efficacies"',
+    href: "https://doi.org/10.1109/CSNet64211.2024.10851763",
   },
   {
     id: "news-021",
@@ -222,6 +241,7 @@ export const newsItems: NewsItem[] = [
     year: 2024,
     category: "Award",
     title: "Won Two Best Presentation Award at IEEE UEMCON 2025, IBM Research Center, NY, USA.",
+    href: "https://ieee-uemcon.org/",
   },
   {
     id: "news-022",
@@ -229,6 +249,7 @@ export const newsItems: NewsItem[] = [
     year: 2024,
     category: "Talk",
     title: "Two papers presented at IEEE UEMCON, IBM Research Center, NY, USA.",
+    href: "https://ieee-uemcon.org/",
   },
   {
     id: "news-023",
@@ -237,6 +258,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       'Paper published IEEE UEMCON, IBM Research Center, NY, USA. "The Dark Side of AI: Large Language Models as Tools for Cyber Attacks on Vehicle Systems"',
+    href: "https://doi.org/10.1109/UEMCON62879.2024.10754676",
   },
   {
     id: "news-024",
@@ -245,6 +267,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       'Paper published IEEE UEMCON, IBM Research Center, NY, USA. "Enhancing Phishing Detection with AI: A Novel Dataset and Comprehensive Analysis Using Machine Learning and Large Language Models"',
+    href: "https://doi.org/10.1109/UEMCON62879.2024.10754710",
   },
   {
     id: "news-025",
@@ -253,6 +276,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       'Paper published IEEE Access "Security and Privacy in E-Health Systems: A Review of AI and Machine Learning Techniques"',
+    href: "https://doi.org/10.1109/ACCESS.2024.3469215",
   },
   {
     id: "news-026",
@@ -275,6 +299,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       'Paper published and presented 2024 ASEE NE Conference, Fairfield, CT "Unveiling Cyber Threats: A Comprehensive Analysis of Connecticut Data Breaches"',
+    href: "https://doi.org/10.18260/1-2--45786",
   },
   {
     id: "news-029",
@@ -291,6 +316,7 @@ export const newsItems: NewsItem[] = [
     category: "Event",
     title:
       'Led Birds of a Feather session at 2024 CAE Symposium, "Adversarial LLMs and their impact on cybersecurity."',
+    href: "https://www.caecommunity.org/",
   },
   {
     id: "news-031",
@@ -299,6 +325,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       'Poster Presented at 2024 CAE Symposium, "AI and Large Language Models (LLMs) for phishing detection and prevention"',
+    href: "https://www.caecommunity.org/",
   },
   {
     id: "news-032",
@@ -316,6 +343,7 @@ export const newsItems: NewsItem[] = [
     category: "Award",
     title:
       'Awarded NASA Connecticut Space Grant Consortium Grant "Physical Layer Security for 5G and Beyond Networks" $20,000, PI',
+    href: "https://ctspacegrant.org/9929/spring-2024-awardees-announced",
   },
   {
     id: "news-034",
@@ -324,6 +352,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Invited Paper Published in IEEE ICACT Transactions on Advanced Communications Technology Journal. Best Paper Award, IEEE ICACT 2023",
+    href: "https://doi.org/10.23919/ICACT60172.2024.10471912",
   },
   {
     id: "news-035",
@@ -340,6 +369,7 @@ export const newsItems: NewsItem[] = [
     year: 2024,
     category: "Publication",
     title: "Paper published: 6G Networks and AI Revolution - Exploring Technologies, Applications, and Emerging Challenges",
+    href: "https://doi.org/10.3390/s24061888",
   },
   {
     id: "news-037",
@@ -355,6 +385,7 @@ export const newsItems: NewsItem[] = [
     category: "Award",
     title:
       'Awarded NSF Grant "Building Institutional Capacity to Support STEM Scholars Through Pedagogy of Real Talk" $1,000,000, Co-PI',
+    href: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2325760",
   },
   {
     id: "news-039",
@@ -378,6 +409,7 @@ export const newsItems: NewsItem[] = [
     year: 2024,
     category: "Award",
     title: "Awarded NEBHE Tech Talent Accelerator (TTA) Grant $40,000, Co-PI",
+    href: "https://www.nebhe.org/connecticut-tta",
   },
   {
     id: "news-042",
@@ -385,6 +417,7 @@ export const newsItems: NewsItem[] = [
     year: 2024,
     category: "Talk",
     title: "Chaired a session on Signal Processing at IEEE CCWC 2024, Las Vegas",
+    href: "https://ieee-ccwc.org/",
   },
   {
     id: "news-043",
@@ -392,6 +425,7 @@ export const newsItems: NewsItem[] = [
     year: 2024,
     category: "Talk",
     title: "Gave research presentation at IEEE CCWC 2024, Las Vegas",
+    href: "https://doi.org/10.1109/CCWC60891.2024.10427626",
   },
   {
     id: "news-044",
@@ -422,6 +456,7 @@ export const newsItems: NewsItem[] = [
     year: 2023,
     category: "Publication",
     title: "Invited Paper: Securing Industrial Control Systems. Sensors Special Issue, 2023.",
+    href: "https://doi.org/10.3390/s23218840",
   },
   {
     id: "news-048",
@@ -445,6 +480,7 @@ export const newsItems: NewsItem[] = [
     year: 2023,
     category: "Talk",
     title: "Gave Opening Remark at BSides CT 2023",
+    href: "https://www.bsidesct.org/",
   },
   {
     id: "news-051",
@@ -483,6 +519,7 @@ export const newsItems: NewsItem[] = [
     year: 2023,
     category: "Publication",
     title: "Paper published: Comprehensive Review of IoT Applications. Sensors Journal, 2023.",
+    href: "https://doi.org/10.3390/s23167194",
   },
   {
     id: "news-055",
@@ -491,6 +528,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Paper published: Privacy in computer ethics. Computer Science and Information Technologies, 2023.",
+    href: "https://doi.org/10.11591/csit.v4i2.pp183-190",
   },
   {
     id: "news-056",
@@ -498,6 +536,7 @@ export const newsItems: NewsItem[] = [
     year: 2023,
     category: "Award",
     title: "Best Paper Award at IEEE ICACT 2023, South Korea",
+    href: "https://doi.org/10.23919/ICACT56868.2023.10079558",
   },
   {
     id: "news-057",
@@ -519,6 +558,7 @@ export const newsItems: NewsItem[] = [
     year: 2023,
     category: "Event",
     title: "Attended 2023 NSF SaTC Aspiring PI Workshop",
+    href: "https://satc-aspiring-pi-workshop-2023.github.io/",
   },
   {
     id: "news-060",
@@ -526,6 +566,7 @@ export const newsItems: NewsItem[] = [
     year: 2023,
     category: "Publication",
     title: "Paper Published at IEEE ICACT 2023, South Korea",
+    href: "https://doi.org/10.23919/ICACT56868.2023.10079558",
   },
   {
     id: "tech-guide-ask-an-expert-2022",
