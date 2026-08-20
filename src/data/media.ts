@@ -21,15 +21,6 @@ export const galleryItems: GalleryItem[] = [
     featured: true,
   },
   {
-    id: "dbsec-gabby-presentation-2026",
-    src: "/media/IMG_7913 (1).jpeg",
-    alt: "Gabriella Campos presenting the lab's LLM-assisted cyberattacks research at DBSec 2026",
-    title: "Gabriella Campos Presents at DBSec 2026",
-    caption: "Gabriella Campos presented “Where LLM-Assisted Cyberattacks Break Down” at George Mason University in Arlington, Virginia.",
-    date: "August 1, 2026",
-    href: "https://doi.org/10.1007/978-3-032-33260-8_26",
-  },
-  {
     id: "dbsec-gabby-2026",
     src: "/media/Gabby at DbSec 2026.jpeg",
     alt: "Gabriella Campos at DBSec 2026",
