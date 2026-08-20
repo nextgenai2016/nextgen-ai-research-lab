@@ -18,6 +18,14 @@ export const newsItems: NewsItem[] = [
     href: "https://aida.unicas.it/AIHA2026/index.html",
   },
   {
+    id: "tcu-cse-ethical-security-leaders-2026",
+    date: "Aug 20, 2026",
+    year: 2026,
+    category: "Media",
+    title: "Featured by TCU Davis College of Science & Engineering: “Preparing Ethical Security Leaders for the Age of AI”",
+    href: "https://cse.tcu.edu/stories/posts/ethics-in-engineering.php",
+  },
+  {
     id: "tcu-magazine-fall-2026",
     date: "Aug 20, 2026",
     year: 2026,
