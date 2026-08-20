@@ -28,7 +28,7 @@ function NavLinks({
     <ul
       className={
         variant === "inline"
-          ? "flex items-center gap-7 min-[1920px]:gap-9"
+          ? "flex items-center gap-5 xl:gap-7 min-[1920px]:gap-9"
           : "flex flex-col gap-0.5"
       }
     >
