@@ -4,9 +4,27 @@ export type NewsItem = {
   year: number;
   category: "Publication" | "Award" | "Talk" | "Media" | "Event" | "Update";
   title: string;
+  href?: string;
 };
 
 export const newsItems: NewsItem[] = [
+  {
+    id: "synthetic-ecg-aiha-2026-presented",
+    date: "Aug 21, 2026",
+    year: 2026,
+    category: "Publication",
+    title:
+      "Paper presented at ICPR 2026 AIHA Workshop: “Physiologically Validated Synthetic ECG Generation via LLM-Guided Constraint Enforcement”",
+    href: "https://aida.unicas.it/AIHA2026/index.html",
+  },
+  {
+    id: "tcu-magazine-fall-2026",
+    date: "Aug 20, 2026",
+    year: 2026,
+    category: "Media",
+    title: "Featured in TCU Magazine Fall 2026",
+    href: "https://magazine.tcu.edu/fall-2026/r1-research-ai-infrastructure/",
+  },
   {
     id: "dbsec-2026-paper-presented",
     date: "Aug 1, 2026",
@@ -14,6 +32,7 @@ export const newsItems: NewsItem[] = [
     category: "Publication",
     title:
       "Paper presented at the 40th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec 2026): “Where LLM-Assisted Cyberattacks Break Down: A Stage-Level Analysis of Workflow Execution Boundaries”",
+    href: "https://doi.org/10.1007/978-3-032-33260-8_26",
   },
   {
     id: "news-000",

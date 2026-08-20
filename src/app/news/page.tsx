@@ -37,7 +37,18 @@ function NewsListItem({ item }: { item: NewsItem }) {
           {categoryLabels[item.category]}
         </span>
         <h2 className="mt-3 text-lg font-semibold leading-snug tracking-tight text-zinc-950 min-[1920px]:text-xl">
-          {item.title}
+          {item.href ? (
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              className="transition-colors hover:text-sky-700"
+            >
+              {item.title}
+            </a>
+          ) : (
+            item.title
+          )}
         </h2>
       </div>
     </article>

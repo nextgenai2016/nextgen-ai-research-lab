@@ -49,7 +49,18 @@ function NewsPreview({ item }: { item: NewsItem }) {
         </span>
         <div className="min-w-0">
           <h2 className="text-sm font-semibold leading-snug tracking-tight text-zinc-950">
-            {item.title}
+            {item.href ? (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="transition-colors hover:text-sky-700"
+              >
+                {item.title}
+              </a>
+            ) : (
+              item.title
+            )}
           </h2>
           <p className="mt-1 font-mono text-[0.65rem] tracking-wide text-zinc-500">
             {item.date}
