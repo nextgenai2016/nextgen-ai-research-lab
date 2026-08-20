@@ -67,6 +67,15 @@ export const newsItems: NewsItem[] = [
       "Paper accepted at ACM IUI 2026 TRUST-CUA Workshop (ACM IUI), Paphos, Cyprus: “Designing Trustworthy Agentic RAG Systems through Modality-Separated Interaction and Error-Aware Memory”",
   },
   {
+    id: "tcu-magazine-student-research-grants-spring-2026",
+    date: "Spring 2026",
+    year: 2026,
+    category: "Media",
+    title:
+      "NextGen AI Research Lab featured in TCU Magazine: “Students Get Hands-On Experience With Projects Thanks to TCU Science & Engineering Research Center Grants”",
+    href: "https://magazine.tcu.edu/spring-2026/tcu-student-research-grants-science-engineering/",
+  },
+  {
     id: "news-002",
     date: "Mar 2025",
     year: 2025,
@@ -293,10 +302,12 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: "news-032",
-    date: "March 2024",
+    date: "Apr 1, 2024",
     year: 2024,
     category: "Media",
-    title: 'Article for Conversation "Undersea cables are the unseen backbone of the global internet"',
+    title:
+      "Article published in The Conversation: “Undersea cables are the unseen backbone of the global internet”",
+    href: "https://theconversation.com/undersea-cables-are-the-unseen-backbone-of-the-global-internet-226300",
   },
   {
     id: "news-033",
@@ -316,11 +327,12 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: "news-035",
-    date: "March 2024",
+    date: "Mar 11, 2024",
     year: 2024,
     category: "Media",
     title:
-      'Article for Conversation "Are private conversations truly private? A cybersecurity expert explains how end-to-end encryption protects you"',
+      "Article published in The Conversation: “Are private conversations truly private? A cybersecurity expert explains how end-to-end encryption protects you”",
+    href: "https://theconversation.com/are-private-conversations-truly-private-a-cybersecurity-expert-explains-how-end-to-end-encryption-protects-you-224477",
   },
   {
     id: "news-036",
@@ -353,11 +365,12 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: "news-040",
-    date: "Jan 2024",
+    date: "Jan 9, 2024",
     year: 2024,
     category: "Media",
     title:
-      'Interview for Heart Media Group "Surge in devices stealing information from debit, credit cards raises concern in CT"',
+      "Interview for Hearst Media: “Surge in devices stealing information from debit, credit cards raises concern in CT”",
+    href: "https://www.ctinsider.com/business/article/ct-atm-credit-card-skimming-device-18591873.php",
   },
   {
     id: "news-041",
@@ -396,10 +409,12 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: "news-046",
-    date: "Nov 2023",
+    date: "Oct 30, 2023",
     year: 2023,
     category: "Media",
-    title: "Interview for Hartford Business Journal on cybersecurity programs",
+    title:
+      "Interview for Hartford Business Journal: “Amid increasing demand, CT colleges in arms race to add cybersecurity programs, faculty”",
+    href: "https://www.hartfordbusiness.com/article/amid-increasing-demand-ct-colleges-in-arms-race-to-add-cybersecurity-programs-faculty",
   },
   {
     id: "news-047",
@@ -410,17 +425,19 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: "news-048",
-    date: "Oct 2023",
+    date: "Oct 6, 2023",
     year: 2023,
     category: "Media",
-    title: "Interview for HuffPost on app tracking",
+    title: "Interview for HuffPost: “Should You Let Apps Track You? Here’s What Tech Pros Personally Choose”",
+    href: "https://www.huffpost.com/entry/can-we-track-you-across-apps-experts-reveal-how-to-answer_l_651c7a7fe4b0b443172fe769",
   },
   {
     id: "news-049",
-    date: "Sep 2023",
+    date: "Oct 6, 2023",
     year: 2023,
     category: "Media",
-    title: 'Interview for Yahoo News "Should You Let Apps Track You?"',
+    title: "Interview for Yahoo News: “Should You Let Apps Track You? Here’s What Tech Pros Personally Choose”",
+    href: "https://sg.news.yahoo.com/let-apps-track-heres-tech-094509696.html",
   },
   {
     id: "news-050",
@@ -434,14 +451,24 @@ export const newsItems: NewsItem[] = [
     date: "Sep 2023",
     year: 2023,
     category: "Media",
-    title: "Interview for Fox61 News on cyber attacks",
+    title: "Interview for Fox61 News: “Experts warn cyber attacks increasing in frequency”",
+    href: "https://www.fox61.com/article/tech/experts-warn-cyber-attacks-are-becoming-frequent/520-82fc9a5d-b884-4cc8-9108-5fd642f0d98c",
+  },
+  {
+    id: "fox61-echn-qakbot-2023",
+    date: "Sep 1, 2023",
+    year: 2023,
+    category: "Media",
+    title:
+      "Interview for Fox61 News: “Investigation in ECHN cyberattack continues, may not be related to FBI takedown of Qakbot”",
+    href: "https://www.fox61.com/article/tech/investigation-echn-cyberattack-related-fbi-takedown-of-qakbot/520-5b78a6e5-6d4a-47f5-8e00-777747234d54",
   },
   {
     id: "news-052",
     date: "Sep 2023",
     year: 2023,
     category: "Media",
-    title: "Interview for WKYC 3 Studios News on cyber attacks",
+    title: "Interview for WKYC 3 Studios News: “Cyber attacks increasing in frequency”",
   },
   {
     id: "news-053",
@@ -499,5 +526,21 @@ export const newsItems: NewsItem[] = [
     year: 2023,
     category: "Publication",
     title: "Paper Published at IEEE ICACT 2023, South Korea",
+  },
+  {
+    id: "tech-guide-ask-an-expert-2022",
+    date: "2022",
+    year: 2022,
+    category: "Media",
+    title: "Interview for Tech Guide’s “Ask an Expert” series",
+    href: "https://techguide.org/computer-science/bachelors-in-computer-science/#expert=robin-chataut",
+  },
+  {
+    id: "research-live-bandwidth-efficiencies-2021",
+    date: "Dec 2021",
+    year: 2021,
+    category: "Media",
+    title: "Interview for Research Live: “Improving Bandwidth Efficiencies”",
+    href: "https://www.fitchburgstate.edu/sites/default/files/documents/2021-12/Research%20Live%20Dec%202021_0.pdf",
   },
 ];
