@@ -33,9 +33,6 @@ export default function MediaPage() {
           </div>
 
           <MediaSlideshow items={galleryItems} />
-          <p className="mt-5 text-sm text-zinc-500">
-            Photos courtesy of TCU Davis College of Science &amp; Engineering.
-          </p>
         </section>
 
         <section id="press" className="scroll-mt-24 pt-20 sm:pt-28">
