@@ -94,7 +94,7 @@ export function MediaSlideshow({ items }: { items: GalleryItem[] }) {
           <span className="font-mono text-xs tracking-wider text-zinc-500">
             {String(activeIndex + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
           </span>
-          <div className="flex gap-2" aria-label="Choose a photo">
+          <div className="flex max-w-xs flex-wrap justify-end gap-2" aria-label="Choose a photo">
             {items.map((item, index) => (
               <button
                 key={item.id}
