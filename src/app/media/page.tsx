@@ -15,39 +15,7 @@ export const metadata: Metadata = {
 export default function MediaPage() {
   return (
     <>
-      <section className="border-b border-sky-100 bg-sky-50">
-        <Container className="pb-16 pt-16 sm:pb-20 sm:pt-24 min-[1920px]:pb-24 min-[1920px]:pt-28">
-          <div className="max-w-4xl">
-            <div className="flex items-center gap-4">
-              <p className="font-mono text-xs uppercase tracking-[0.24em] text-sky-800">Media</p>
-              <div className="h-px w-12 bg-sky-800/60" />
-            </div>
-            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-zinc-950 sm:text-5xl min-[1920px]:text-6xl">
-              Stories from the lab
-            </h1>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg">
-              Explore moments from our research community, press coverage, expert commentary,
-              and public engagement.
-            </p>
-            <nav className="mt-9 flex gap-3" aria-label="Media page sections">
-              <a
-                href="#gallery"
-                className="bg-sky-800 px-5 py-2.5 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-sky-900"
-              >
-                Gallery
-              </a>
-              <a
-                href="#press"
-                className="border border-sky-800 px-5 py-2.5 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-sky-900 transition hover:bg-white"
-              >
-                Press
-              </a>
-            </nav>
-          </div>
-        </Container>
-      </section>
-
-      <Container className="pb-24 pt-16 sm:pb-28 sm:pt-20">
+      <Container className="pb-24 pt-12 sm:pb-28 sm:pt-16">
         <section id="gallery" className="scroll-mt-24">
           <div className="grid gap-8 border-b border-zinc-200 pb-10 md:grid-cols-[14rem_1fr]">
             <div>

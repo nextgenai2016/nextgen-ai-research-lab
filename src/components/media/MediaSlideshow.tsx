@@ -25,7 +25,7 @@ export function MediaSlideshow({ items }: { items: GalleryItem[] }) {
 
   return (
     <div
-      className="mt-10 overflow-hidden border border-zinc-200 bg-white"
+      className="mx-auto mt-10 max-w-5xl overflow-hidden border border-zinc-200 bg-white"
       aria-roledescription="carousel"
       aria-label="Lab photo gallery"
       onMouseEnter={() => setPaused(true)}
@@ -33,7 +33,7 @@ export function MediaSlideshow({ items }: { items: GalleryItem[] }) {
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
     >
-      <div className="relative aspect-[16/10] bg-zinc-950 sm:aspect-[16/9]">
+      <div className="relative aspect-[16/9] bg-zinc-950 sm:aspect-[2/1]">
         <Image
           key={activeItem.src}
           src={activeItem.src}

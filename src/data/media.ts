@@ -87,14 +87,6 @@ export const galleryItems: GalleryItem[] = [
     date: "Spring 2026",
   },
   {
-    id: "srs-madhavam-2026",
-    src: "/media/Madhavam's Group presenting poster SERC 2026.jpeg",
-    alt: "Student research group presenting a poster at the 2026 TCU Student Research Symposium",
-    title: "Student Researchers Share Their Work",
-    caption: "NextGenAI student researchers presented their work at TCU's annual Student Research Symposium.",
-    date: "Spring 2026",
-  },
-  {
     id: "aaai-jayapradeep-presenting-2026",
     src: "/media/Jayapradeep presenting at AAAI 2026.jpeg",
     alt: "Jayapradeep Srinivas presenting at the AAAI 2026 AI4EDU Workshop in Singapore",
