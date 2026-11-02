@@ -93,6 +93,18 @@ export const currentUndergraduateStudents: StudentMember[] = [
     bio: "B.S. in Computer Science, Texas Christian University. Research interests include AI-based phishing detection and tools to automate phishing detection in browsers.",
     imageSrc: "/team/tam.jpeg",
   },
+  {
+    id: "evelyn-tran",
+    name: "Evelyn Tran",
+    bio: "Research on AI for healthcare in collaboration with the TCU Nursing Department and Children's Hospital.",
+    imageSrc: "/team/generic-profile.svg",
+  },
+  {
+    id: "yashaswi-shrestha",
+    name: "Yashaswi Shrestha",
+    bio: "Research on applying world models to 6G networks.",
+    imageSrc: "/team/generic-profile.svg",
+  },
 ];
 
 export const currentStudents: StudentMember[] = [
