@@ -27,9 +27,9 @@ export const publications: Publication[] = [
     type: "Conference",
     venue: "IEEE BigData 2026",
     year: 2026,
-    authors: ["R. Chataut*", "R. Phan*", "C. Pandey*", "B. Wei*", "P. K. Gyawali"],
+    authors: ["R. Chataut", "R. Phan", "C. Pandey", "B. Wei", "P. K. Gyawali"],
     summary:
-      "Accepted at the 9th Special Session on Healthcare Data at the 14th IEEE International Conference on Big Data (IEEE BigData 2026). *Equal contribution.",
+      "Accepted at the 9th Special Session on Healthcare Data at the 14th IEEE International Conference on Big Data (IEEE BigData 2026).",
   },
   {
     id: "physiologically-validated-synthetic-ecg-generation-2026",
