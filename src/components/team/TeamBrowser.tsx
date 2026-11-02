@@ -218,18 +218,29 @@ function StudentModal({
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">
                   Project Links
                 </h3>
-                <div className="mt-3 flex flex-wrap gap-3">
+                <div className="mt-3 space-y-3">
                   {member.projects.map((project) => (
-                    <a
-                      key={project.url}
-                      href={project.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-md bg-sky-800 px-3 py-2 text-sm font-semibold text-white transition hover:bg-sky-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2"
-                    >
-                      {project.label}
-                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                    </a>
+                    <div key={project.label} className="rounded-md border border-zinc-200 p-4">
+                      <h4 className="font-semibold text-zinc-950">{project.label}</h4>
+                      <p className="mt-2 text-sm leading-6 text-zinc-600">
+                        {project.description}
+                      </p>
+                      {project.url ? (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="mt-3 inline-flex items-center gap-2 rounded-md bg-sky-800 px-3 py-2 text-sm font-semibold text-white transition hover:bg-sky-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2"
+                        >
+                          Open project
+                          <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                        </a>
+                      ) : (
+                        <span className="mt-3 inline-flex rounded-md bg-zinc-100 px-3 py-2 text-sm font-semibold text-zinc-500">
+                          Link coming soon
+                        </span>
+                      )}
+                    </div>
                   ))}
                 </div>
               </div>

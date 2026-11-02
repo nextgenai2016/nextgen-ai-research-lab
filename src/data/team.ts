@@ -20,7 +20,8 @@ export type TeamMember = {
   bio: string;
   projects?: Array<{
     label: string;
-    url: string;
+    description: string;
+    url?: string;
   }>;
   linkedin?: string;
   /** Optional path under /public */
@@ -86,8 +87,15 @@ export const currentUndergraduateStudents: StudentMember[] = [
     bio: "B.S. in Computer Science, Texas Christian University. Research on developing AI-powered tutoring tools and CLARA, a deployed, personalized dementia education and support platform for caregivers. CLARA uses an open-weight large language model, retrieval-augmented generation, persistent memory, caregiver profiling, voice interaction, and safety controls to deliver grounded, context-aware support.",
     projects: [
       {
-        label: "Open CLARA",
+        label: "CLARA",
+        description:
+          "A deployed, personalized dementia education and support platform for caregivers, built with an open-weight large language model, retrieval-augmented generation, persistent memory, caregiver profiling, voice interaction, and safety controls.",
         url: "https://anchor-caregiver.vercel.app/",
+      },
+      {
+        label: "AI-Powered Tutoring Tool",
+        description:
+          "A personalized educational tool designed to provide AI-assisted learning support for students.",
       },
     ],
     linkedin: "https://www.linkedin.com/in/jayapradeep-jayaraman-srinivas-ab15211b4/",
