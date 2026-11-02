@@ -118,19 +118,46 @@ function StudentGrid({
     <ul className="grid gap-6 md:grid-cols-2">
       {members.map((member) => (
         <li key={member.id}>
-          <button
-            type="button"
-            onClick={() => onSelect(member)}
-            className="flex h-full w-full flex-col gap-5 rounded-lg border border-zinc-200 bg-white p-6 text-left shadow-sm transition hover:border-sky-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 sm:flex-row sm:items-start"
-          >
+          <article className="flex h-full flex-col gap-5 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition hover:border-sky-300 hover:shadow-md sm:flex-row sm:items-start">
             <TeamPhoto name={member.name} alt={member.name} imageSrc={member.imageSrc} />
-            <div className="min-w-0 flex-1">
-              <h3 className="text-lg font-semibold text-zinc-950">{member.name}</h3>
-              <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-zinc-600">
-                {member.bio}
-              </p>
+            <div className="flex min-w-0 flex-1 flex-col self-stretch">
+              <div>
+                <h3 className="text-lg font-semibold text-zinc-950">{member.name}</h3>
+                <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-zinc-600">
+                  {member.bio}
+                </p>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                {member.linkedin ? (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-md border border-zinc-300 px-3 py-2 text-sm font-semibold text-zinc-700 transition hover:border-sky-300 hover:text-sky-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700"
+                  >
+                    LinkedIn
+                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                  </a>
+                ) : (
+                  <span
+                    aria-disabled="true"
+                    title="LinkedIn profile not yet available"
+                    className="inline-flex cursor-not-allowed items-center gap-2 rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm font-semibold text-zinc-400"
+                  >
+                    LinkedIn
+                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                )}
+                <button
+                  type="button"
+                  onClick={() => onSelect(member)}
+                  className="rounded-md bg-sky-800 px-3 py-2 text-sm font-semibold text-white transition hover:bg-sky-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2"
+                >
+                  Projects
+                </button>
+              </div>
             </div>
-          </button>
+          </article>
         </li>
       ))}
     </ul>
@@ -186,30 +213,25 @@ function StudentModal({
               Research Contribution
             </h3>
             <p className="mt-3 text-base leading-8 text-zinc-700">{member.bio}</p>
-            {member.project || member.linkedin ? (
-              <div className="mt-5 flex flex-wrap gap-5">
-                {member.project ? (
-                  <a
-                    href={member.project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
-                  >
-                    {member.project.label}
-                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                  </a>
-                ) : null}
-                {member.linkedin ? (
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
-                  >
-                    LinkedIn
-                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                  </a>
-                ) : null}
+            {member.projects?.length ? (
+              <div className="mt-6 border-t border-zinc-200 pt-5">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">
+                  Project Links
+                </h3>
+                <div className="mt-3 flex flex-wrap gap-3">
+                  {member.projects.map((project) => (
+                    <a
+                      key={project.url}
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-md bg-sky-800 px-3 py-2 text-sm font-semibold text-white transition hover:bg-sky-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2"
+                    >
+                      {project.label}
+                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
               </div>
             ) : null}
           </div>
