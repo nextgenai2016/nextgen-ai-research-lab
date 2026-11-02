@@ -31,7 +31,7 @@ export const publications: Publication[] = [
     summary:
       "In Proceedings of the 4th International Workshop on Artificial Intelligence for Healthcare Applications (AIHA) at International Conference on Pattern Recognition (ICPR), August, 2026.",
     links: {
-      paper: "",
+      paper: "https://doi.org/10.1007/978-3-032-39379-1_19",
     },
   },
   {
