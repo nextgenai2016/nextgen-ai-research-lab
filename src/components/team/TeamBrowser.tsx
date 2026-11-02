@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { ExternalLink, X } from "lucide-react";
 import { ProfileLinks } from "@/components/team/ProfileLinks";
 import { TeamPhoto } from "@/components/team/TeamPhoto";
 import type { PrincipalInvestigator, TeamMember } from "@/data/team";
@@ -186,6 +186,17 @@ function StudentModal({
               Research Contribution
             </h3>
             <p className="mt-3 text-base leading-8 text-zinc-700">{member.bio}</p>
+            {member.project ? (
+              <a
+                href={member.project.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-sky-700 underline decoration-sky-300 underline-offset-4 transition hover:text-sky-800 hover:decoration-sky-500"
+              >
+                {member.project.label}
+                <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>

@@ -18,6 +18,10 @@ export type TeamMember = {
   id: string;
   name: string;
   bio: string;
+  project?: {
+    label: string;
+    url: string;
+  };
   /** Optional path under /public */
   imageSrc?: string;
 };
@@ -78,7 +82,11 @@ export const currentUndergraduateStudents: StudentMember[] = [
   {
     id: "jayapradeep-srinivasan",
     name: "JayaPradeep Srinivasan",
-    bio: "B.S. in Computer Science, Texas Christian University. Research on developing AI-powered tutoring tools for students.",
+    bio: "B.S. in Computer Science, Texas Christian University. Research on developing AI-powered tutoring tools and CLARA, a deployed, personalized dementia education and support platform for caregivers. CLARA uses an open-weight large language model, retrieval-augmented generation, persistent memory, caregiver profiling, voice interaction, and safety controls to deliver grounded, context-aware support.",
+    project: {
+      label: "Visit CLARA",
+      url: "https://anchor-caregiver.vercel.app/",
+    },
     imageSrc: "/team/jaypradeep.png",
   },
   {
