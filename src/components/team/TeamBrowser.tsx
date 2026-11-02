@@ -127,35 +127,30 @@ function StudentGrid({
                   {member.bio}
                 </p>
               </div>
-              <div className="mt-5 flex flex-wrap gap-3">
-                {member.linkedin ? (
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md border border-zinc-300 px-3 py-2 text-sm font-semibold text-zinc-700 transition hover:border-sky-300 hover:text-sky-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700"
-                  >
-                    LinkedIn
-                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                  </a>
-                ) : (
-                  <span
-                    aria-disabled="true"
-                    title="LinkedIn profile not yet available"
-                    className="inline-flex cursor-not-allowed items-center gap-2 rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm font-semibold text-zinc-400"
-                  >
-                    LinkedIn
-                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                  </span>
-                )}
-                <button
-                  type="button"
-                  onClick={() => onSelect(member)}
-                  className="rounded-md bg-sky-800 px-3 py-2 text-sm font-semibold text-white transition hover:bg-sky-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2"
-                >
-                  Projects
-                </button>
-              </div>
+              {member.linkedin || member.projects?.length ? (
+                <div className="mt-5 flex flex-wrap gap-3">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-md border border-zinc-300 px-3 py-2 text-sm font-semibold text-zinc-700 transition hover:border-sky-300 hover:text-sky-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700"
+                    >
+                      LinkedIn
+                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                    </a>
+                  ) : null}
+                  {member.projects?.length ? (
+                    <button
+                      type="button"
+                      onClick={() => onSelect(member)}
+                      className="rounded-md bg-sky-800 px-3 py-2 text-sm font-semibold text-white transition hover:bg-sky-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2"
+                    >
+                      Projects
+                    </button>
+                  ) : null}
+                </div>
+              ) : null}
             </div>
           </article>
         </li>
