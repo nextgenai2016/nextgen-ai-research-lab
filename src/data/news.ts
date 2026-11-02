@@ -9,6 +9,14 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+    id: "agesafebench-ieee-bigdata-2026-accepted",
+    date: "November 2026",
+    year: 2026,
+    category: "Publication",
+    title:
+      "Paper accepted at the 9th Special Session on Healthcare Data at the 14th IEEE International Conference on Big Data (IEEE BigData 2026): “AgeSafeBench: A Large-Scale Benchmark for Evaluating Age-Conditioned Robustness in Healthcare LLMs”",
+  },
+  {
     id: "synthetic-ecg-aiha-2026-presented",
     date: "Aug 21, 2026",
     year: 2026,
