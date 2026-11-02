@@ -22,6 +22,7 @@ export type TeamMember = {
     label: string;
     url: string;
   };
+  linkedin?: string;
   /** Optional path under /public */
   imageSrc?: string;
 };
@@ -87,6 +88,7 @@ export const currentUndergraduateStudents: StudentMember[] = [
       label: "Visit CLARA",
       url: "https://anchor-caregiver.vercel.app/",
     },
+    linkedin: "https://www.linkedin.com/in/jayapradeep-jayaraman-srinivas-ab15211b4/",
     imageSrc: "/team/jaypradeep.png",
   },
   {
