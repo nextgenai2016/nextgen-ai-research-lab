@@ -9,6 +9,15 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+    id: "tcu-top-two-percent-scientists-2026",
+    date: "Nov 3, 2026",
+    year: 2026,
+    category: "Award",
+    title:
+      "Robin Chataut named among the world’s top 2% of scientists in a Stanford University-led analysis of global citation data",
+    href: "https://www.tcu.edu/news/2026/tcu-researchers-named-top-scientists.php",
+  },
+  {
     id: "agesafebench-ieee-bigdata-2026-accepted",
     date: "November 2026",
     year: 2026,
